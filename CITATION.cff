@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "multilingual-classics-markdown: Public-domain literary classics in 45 languages, curated as markdown with YAML frontmatter"
+message: "If this corpus contributes to your work, please cite it."
+type: dataset
+authors:
+  - given-names: Simon
+    family-names: Powell
+repository-code: "https://github.com/tideswellgroup/multilingual-classics-markdown"
+url: "https://github.com/tideswellgroup/multilingual-classics-markdown"
+abstract: >-
+  A curated public-domain literary corpus in 45 languages across 58 locales,
+  converted to clean markdown with YAML frontmatter. Spans 14 language
+  families and 12 script systems including Latin (with rich diacritics),
+  Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, CJK (Han,
+  kana, Hangul), Thai abugida, Cherokee syllabary, plus three
+  constructed auxiliary languages. Designed as a drop-in test corpus
+  for application developers, NLP researchers, language learners, and
+  typography enthusiasts working with multilingual content.
+keywords:
+  - public domain
+  - literary corpus
+  - multilingual
+  - markdown
+  - internationalization
+  - i18n
+  - world literature
+  - digital humanities
+  - text rendering
+  - typography
+license: CC0-1.0
+license-url: "https://creativecommons.org/publicdomain/zero/1.0/"
+version: 1.0.0
+date-released: "2026-07-14"
+preferred-citation:
+  type: software
+  title: "multilingual-classics-markdown: Public-domain literary classics in 45 languages"
+  authors:
+    - given-names: Simon
+      family-names: Powell
+  year: 2026
+  url: "https://github.com/tideswellgroup/multilingual-classics-markdown"
