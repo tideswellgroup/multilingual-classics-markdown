@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+.mckay-cache/
+scripts/.gulistan-html-cache/
+
+# local planning docs, never published
+LAUNCH-PLAN.md
+
+# local scan caches, never published (large; refetchable from the cited source_url)
+scans/
+scans
+
+# internal planning docs, never published
+ROADMAP.md
+PUBLISH-AUDIT.md

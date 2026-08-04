@@ -1,0 +1,79 @@
+name: lint-corpus
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'books/**/*.md'
+      - 'scripts/lint-corpus.py'
+      - 'scripts/check-doc-counts.py'
+      - 'scripts/check-manifest-schema.py'
+      - 'manifest.schema.json'
+      - 'croissant.json'
+      - 'README.md'
+      - 'CORPUS.md'
+      - 'CITATION.cff'
+      - 'manifest.json'
+      - '.github/workflows/lint.yml'
+  pull_request:
+    paths:
+      - 'books/**/*.md'
+      - 'scripts/lint-corpus.py'
+      - 'scripts/check-doc-counts.py'
+      - 'scripts/check-manifest-schema.py'
+      - 'manifest.schema.json'
+      - 'croissant.json'
+      - 'README.md'
+      - 'CORPUS.md'
+      - 'CITATION.cff'
+      - 'manifest.json'
+
+jobs:
+  lint:
+    name: Validate corpus markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install validation dependencies
+        run: |
+          python3 -m pip install --quiet jsonschema
+
+      - name: Run lint-corpus
+        run: |
+          python3 scripts/lint-corpus.py books/
+        # Exits non-zero if any errors are found; warnings allowed
+
+      - name: Check manifest freshness
+        run: |
+          python3 scripts/build-manifest.py --check
+        # manifest.json is the machine-readable corpus index; it must be
+        # regenerated (scripts/build-manifest.py) whenever books change.
+
+      - name: Validate manifest against its schema
+        run: |
+          python3 scripts/check-manifest-schema.py
+        # manifest.json declares $schema: ./manifest.schema.json; this gate
+        # makes that reference mean something. The schema is strict
+        # (additionalProperties: false), so a frontmatter key that reaches the
+        # corpus without being added to the schema and documented in
+        # FRONTMATTER.md fails here.
+
+      - name: Validate the Croissant description
+        run: |
+          python3 -c "import json,sys; json.load(open('croissant.json')); print('croissant.json parses')"
+        # Full Croissant validation needs the mlcroissant package; this gate
+        # catches the common failure, which is invalid JSON after an edit.
+
+      - name: Check documented counts against the manifest
+        run: |
+          python3 scripts/check-doc-counts.py
+        # README/CORPUS/CITATION repeat the corpus numbers in prose
+        # (languages, locales, books, families, the coverage matrix).
+        # This gate catches the drift when a book or locale lands.
