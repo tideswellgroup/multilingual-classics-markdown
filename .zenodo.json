@@ -1,0 +1,28 @@
+{
+  "upload_type": "dataset",
+  "title": "multilingual-classics-markdown: Public-domain literary classics in 45 languages, curated as markdown with YAML frontmatter",
+  "description": "A curated corpus of 137 books in 45 languages across 58 locales, converted from upstream digitisation projects to clean markdown with consistent YAML frontmatter. It spans 14 language families and 12 script systems: Latin with rich diacritics, Cyrillic, polytonic Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Tamil, Han, kana, Hangul, the Thai abugida and the Cherokee syllabary, together with three constructed auxiliary languages and the historical stages of English from Old English to original-spelling Early Modern.\n\nEvery work is public domain in the United States, and every file names the edition it was transcribed from. Frontmatter carries the upstream archive, the exact source URL fetched, the publication year of the cited source edition, and notes recording what was excerpted, corrected or left alone. Books whose text falls below the corpus fidelity bar declare a machine-readable text_quality tier so they can be filtered out in one line.\n\nThis is a convenience corpus rather than a collection of critical editions. Texts inherit the transcription errors of the volunteer projects they come from, and none has been collated against manuscripts or authoritative print editions. Known defects are tracked openly in QUALITY.md; the scope and limitations are stated in the README.\n\nThe book content is released under CC0 1.0. The conversion tooling under scripts/ is MIT-licensed.",
+  "creators": [
+    {
+      "name": "Powell, Simon"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "language": "mul",
+  "version": "1.0.0",
+  "keywords": [
+    "public domain",
+    "literary corpus",
+    "multilingual",
+    "markdown",
+    "internationalization",
+    "i18n",
+    "world literature",
+    "digital humanities",
+    "text rendering",
+    "typography",
+    "low-resource languages",
+    "writing systems"
+  ]
+}

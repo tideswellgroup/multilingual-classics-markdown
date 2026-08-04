@@ -1,6 +1,6 @@
 # multilingual-classics-markdown
 
-[![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 137](https://img.shields.io/badge/books-137-blue.svg)](CORPUS.md) [![Locales: 58](https://img.shields.io/badge/locales-58-blue.svg)](#coverage-matrix)
+[![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 137](https://img.shields.io/badge/books-137-blue.svg)](CORPUS.md) [![Locales: 58](https://img.shields.io/badge/locales-58-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
 
 > A curated corpus of public-domain literary classics in 45 languages across 58 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Tamil, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 137 books across 14 language families and 12 script systems.
 
@@ -36,6 +36,9 @@ This repo began life as the internationalisation test corpus for a Mac-native ma
 The corpus is intended for:
 
 - Developers of markdown readers, e-readers, and typography tools who need real non-English prose to test against
+- Font and typeface engineers who want running text rather than a specimen sheet: Devanagari and Bengali conjuncts, Thai marks that stack above and below the line, Arabic and Perso-Arabic joining, polytonic Greek, and the Cherokee syllabary
+- Accessibility and speech engineers, because every file declares a full BCP-47 language tag in its frontmatter, which is what screen readers and speech synthesisers switch voices on
+- Developers of typesetting and document-conversion engines (Pandoc, Typst, LaTeX, EPUB toolchains) who want multi-script input to compile against, including the thirteen Japanese, Korean and Chinese books that declare `writing-mode: vertical-rl`
 - NLP researchers who want a literary corpus balanced across script families
 - Language learners who want canonical literature alongside translations
 - Anyone curious to see how many different writing systems can live in the same plain-text file format
@@ -230,6 +233,7 @@ multilingual-classics-markdown/
 ├── manifest.json          # machine-readable index of every book
 ├── manifest.schema.json   # JSON Schema the manifest is validated against in CI
 ├── croissant.json         # MLCommons Croissant description of the dataset
+├── .zenodo.json           # deposit metadata Zenodo reads when a release is archived
 ├── LICENSE                # CC0 1.0 legal text (content)
 ├── audits/                # dated records of full-corpus review passes
 │   ├── README.md          # why they are kept and when a pass happens
