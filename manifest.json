@@ -715,12 +715,12 @@
       "year_note": "First serialised 1893 in El Demócrata; text from the 1911 Bouret fifth edition (corregida y aumentada), the 600 DPI Michigan scan.",
       "source": "Internet Archive",
       "source_url": "https://archive.org/details/agn0784.0001.001.umich.edu",
-      "source_note": "Machine OCR, run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) over the 1911 fifth-edition scan, replacing an earlier raw Google Books OCR of the 1906 scan that carried pervasive noise, lost chapter V, and had no headings. Base engine chosen by measured noise; cross-checked against the other engine. The standalone Roman-numeral chapter markers are promoted to headings (recovering chapter V, which the old text had lost); the sequence is largely right but, being read from ambiguous standalone numerals, carries occasional gaps and spurious entries that a proofreader would settle. Running heads, page numbers, and line-end hyphenation resolved as in every conversion. Two-engine body-line agreement (REOCR.md): 97% of 8339 primary-language body lines read identically by both engines (mean 97%); 244 lines diverge and are the first place a fluent reviewer should look. This is machine OCR, not a proofread edition: the flagged lines are where a fluent reader should look first. Hand corrections 2026-07-25 against the same scan's page images: chapter I (Calumnia y verdad, printed pages 9-13), which the conversion had discarded with the front matter because its printed numeral sits under the chapter vignette and was missed by both engines, restored by hand transcription; the misread standalone numerals for chapters XI and XXXVIII promoted to their printed headings; a spurious chapter-I heading (a misread exclamation mark) removed from mid-chapter XXII; the closing index kept as printed content but its numerals demoted from headings to plain text, its running-head repeat and page-column labels removed. The chapter heading sequence now runs I-XLII complete. The hand-transcribed chapter I is cleaner than the surrounding machine OCR; dialogue dashes follow the file's hyphen convention.",
+      "source_note": "Machine OCR, run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) over the 1911 fifth-edition scan, replacing an earlier raw Google Books OCR of the 1906 scan that carried pervasive noise, lost chapter V, and had no headings. Base engine chosen by measured noise; cross-checked against the other engine. The standalone Roman-numeral chapter markers are promoted to headings (recovering chapter V, which the old text had lost); the sequence is largely right but, being read from ambiguous standalone numerals, carries occasional gaps and spurious entries that a proofreader would settle. Running heads, page numbers, and line-end hyphenation resolved as in every conversion. Two-engine body-line agreement (REOCR.md): 97% of 8339 primary-language body lines read identically by both engines (mean 97%); 244 lines diverge and are the first place a fluent reviewer should look. This is machine OCR, not a proofread edition: the flagged lines are where a fluent reader should look first. Hand corrections 2026-07-25 against the same scan's page images: chapter I (Calumnia y verdad, printed pages 9-13), which the conversion had discarded with the front matter because its printed numeral sits under the chapter vignette and was missed by both engines, restored by hand transcription; the misread standalone numerals for chapters XI and XXXVIII promoted to their printed headings; a spurious chapter-I heading (a misread exclamation mark) removed from mid-chapter XXII; the closing index kept as printed content but its numerals demoted from headings to plain text, its running-head repeat and page-column labels removed. The chapter heading sequence now runs I-XLII complete. The hand-transcribed chapter I is cleaner than the surrounding machine OCR; dialogue dashes follow the file's hyphen convention. Correction 2026-08-04: two stray backticks removed as OCR debris, one lodged in a hyphenation break, one standing where the space belongs inside a spaced guillemet pair, that space restored. In Markdown a backtick opens a code span, so stray ones can swallow text in rendering.",
       "license": "Public domain in the United States",
       "text_quality": "noisy",
       "yearNumeric": 1893,
-      "sizeBytes": 400752,
-      "wordCount": 64671
+      "sizeBytes": 401029,
+      "wordCount": 64672
     },
     {
       "path": "books/es-MX/Ignacio Manuel Altamirano/El Zarco.md",
@@ -1460,7 +1460,7 @@
       "selection_note": "A curated run of the first 100 moteatea (waiata, tangi, and related song-poetry) in the collection's own printed sequence; Grey's 1853 collection runs to over 500 pieces and the whole exceeds the corpus size guidance. Grey's English editorial footnotes have been removed; only the Maori song texts are included.",
       "license": "Public domain in the United States",
       "yearNumeric": 1853,
-      "sizeBytes": 81481,
+      "sizeBytes": 81483,
       "wordCount": 15510
     },
     {
@@ -1542,7 +1542,7 @@
       "source_note": "Complete in two parts and thirty-one chapters, nineteen in Første del and twelve in Anden del, assembled from Gutenberg 43724 and 43725. The converter asserts those counts and refuses to write if either is short. Removed as apparatus: Gutenberg's header and footer, the transcriber's note on character encoding, and the title-page block. Each Gutenberg volume ends with a Trykkfeil list recording where the transcription corrects the print and where it leaves a reading unchanged; that list is apparatus rather than text and is not reproduced here, but it is worth consulting at the ebooks themselves. Source line wrapping is kept, as are the 181 non-breaking spaces the transcriber uses to bind short words such as 'i den' and 'Mening i'. They are invisible in a reader and will show up in tokenisation. No word of the text is changed.",
       "license": "Public domain in the United States",
       "yearNumeric": 1917,
-      "sizeBytes": 654679,
+      "sizeBytes": 654681,
       "wordCount": 121746
     },
     {
@@ -1862,9 +1862,10 @@
       "year_note": "Subramania Bharati died in 1921; the national songs were composed and published in his lifetime, from 1908 onward.",
       "source": "Wikisource (ta)",
       "source_url": "https://ta.wikisource.org/wiki/பாரதியாரின்_தேசிய_கீதங்கள்",
+      "source_note": "Markup correction 2026-08-04: one leftover HTML small-tag pair around a metre-notation line, residue of the Wikisource HTML conversion, removed; the notation line itself is kept. No word of the text is changed.",
       "license": "Public domain in the United States",
       "yearNumeric": 1921,
-      "sizeBytes": 215856,
+      "sizeBytes": 216067,
       "wordCount": 9727
     },
     {
@@ -1972,7 +1973,7 @@
       "selection_note": "Five canonical stories - Kasagi, Pembe Incili Kaftan, Falaka, Diyet, Basini Vermeyen Sehit.",
       "license": "Public domain in the United States",
       "yearNumeric": 1919,
-      "sizeBytes": 82374,
+      "sizeBytes": 82376,
       "wordCount": 9912
     },
     {
@@ -2175,12 +2176,12 @@
       "year": "1852",
       "source": "Internet Archive",
       "source_url": "https://archive.org/details/vocabularyofyoru00crow",
-      "source_note": "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) with the Yoruba model, base engine chosen by measured noise, replacing an earlier Internet Archive OCR that had destroyed the sub-dot vowels (ọ ẹ ṣ) and tone marks. The re-OCR recovers most of them, which is the point of the rebuild; the reading is still machine OCR. Each entry opens with its all-caps headword; page numbers, page-guide headers, and line-end hyphenation are dropped. Two-engine body-line agreement (REOCR.md): 94% of 8896 primary-language body lines read identically by both engines (mean 91%); 546 lines diverge and are the first place a fluent reviewer should look. The flagged lines are where a Yoruba reader should look first.",
+      "source_note": "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) with the Yoruba model, base engine chosen by measured noise, replacing an earlier Internet Archive OCR that had destroyed the sub-dot vowels (ọ ẹ ṣ) and tone marks. The re-OCR recovers most of them, which is the point of the rebuild; the reading is still machine OCR. Each entry opens with its all-caps headword; page numbers, page-guide headers, and line-end hyphenation are dropped. Two-engine body-line agreement (REOCR.md): 94% of 8896 primary-language body lines read identically by both engines (mean 91%); 546 lines diverge and are the first place a fluent reviewer should look. The flagged lines are where a Yoruba reader should look first. Correction 2026-08-04: 39 stray backticks replaced with the plain apostrophe. Each sat immediately before a headword where the book prints a leading tone-mark apostrophe, and several headwords appear both ways, so the backtick reads as that mark misrecognized; as backticks they also triggered spurious code formatting in Markdown renderers.",
       "language_note": "A Yoruba-English dictionary; the headwords are Yoruba, the definitions English. A reference work, included as a yo locale-filler.",
       "license": "Public domain in the United States",
       "text_quality": "noisy",
       "yearNumeric": 1852,
-      "sizeBytes": 416743,
+      "sizeBytes": 417085,
       "wordCount": 67771
     },
     {

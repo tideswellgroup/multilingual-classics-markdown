@@ -9,7 +9,7 @@ source_url: "https://archive.org/details/vocabularyofyoru00crow"
 license: Public domain in the United States
 text_quality: noisy
 language_note: "A Yoruba-English dictionary; the headwords are Yoruba, the definitions English. A reference work, included as a yo locale-filler."
-source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) with the Yoruba model, base engine chosen by measured noise, replacing an earlier Internet Archive OCR that had destroyed the sub-dot vowels (ọ ẹ ṣ) and tone marks. The re-OCR recovers most of them, which is the point of the rebuild; the reading is still machine OCR. Each entry opens with its all-caps headword; page numbers, page-guide headers, and line-end hyphenation are dropped. Two-engine body-line agreement (REOCR.md): 94% of 8896 primary-language body lines read identically by both engines (mean 91%); 546 lines diverge and are the first place a fluent reviewer should look. The flagged lines are where a Yoruba reader should look first."
+source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline (REOCR.md) with the Yoruba model, base engine chosen by measured noise, replacing an earlier Internet Archive OCR that had destroyed the sub-dot vowels (ọ ẹ ṣ) and tone marks. The re-OCR recovers most of them, which is the point of the rebuild; the reading is still machine OCR. Each entry opens with its all-caps headword; page numbers, page-guide headers, and line-end hyphenation are dropped. Two-engine body-line agreement (REOCR.md): 94% of 8896 primary-language body lines read identically by both engines (mean 91%); 546 lines diverge and are the first place a fluent reviewer should look. The flagged lines are where a Yoruba reader should look first. Correction 2026-08-04: 39 stray backticks replaced with the plain apostrophe. Each sat immediately before a headword where the book prints a leading tone-mark apostrophe, and several headwords appear both ways, so the backtick reads as that mark misrecognized; as backticks they also triggered spurious code formatting in Markdown renderers."
 ---
 **SE**, "sin," the original idea of the verb.
 
@@ -2235,7 +2235,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **EIYE**, S. bird.
 
-**EIYELE**, S. pigeon (properly, domestic bird).-Dagbèse dagbèse ti ipa apata eiyele, "He runs into debt, who cuts up a pigeon to sell it in parts ;" (i. e. who buys an article wholesale at a high price, and finds it worthless in retail). ẸJa, s. fish.—Ikú eja ni imu eja imò illu, eja Ogun ibá şe de Akessan, "It was the death of the fish that introduced it to the town; what else would have brought it from the (river) `Ogun to the palace?"
+**EIYELE**, S. pigeon (properly, domestic bird).-Dagbèse dagbèse ti ipa apata eiyele, "He runs into debt, who cuts up a pigeon to sell it in parts ;" (i. e. who buys an article wholesale at a high price, and finds it worthless in retail). ẸJa, s. fish.—Ikú eja ni imu eja imò illu, eja Ogun ibá şe de Akessan, "It was the death of the fish that introduced it to the town; what else would have brought it from the (river) 'Ogun to the palace?"
 
 **ẸJJE**, s. blood.—Ohun gbogbo li adiyele, ṣugbọn kò si enniti o mo iye ara èjje ara enni ; ejję kò fi oju rere jade, "Every thing has its price; but who can set a price upon blood? Blood does not willingly leave the body." EJó, s. matter; dispute; harm.
 
@@ -2971,15 +2971,15 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IDA-SE**, ADAŞE, s. venture, risk, hazard. IDA-Wò, s. consultation of the gods, or oracles.
 
-**IDA-WO**, IDA-RÓ, s. iron dross. IDAWOPò, s. a joining of hands together, union. `IDE, s. the act of being confined, bondage, bond.
+**IDA-WO**, IDA-RÓ, s. iron dross. IDAWOPò, s. a joining of hands together, union. 'IDE, s. the act of being confined, bondage, bond.
 
-**IDEBIPA**, IFEBIPA (da-ebi-pa), s. starvation. IDEHUN (de-ohun), s. bargain, agreement. IDELE (de-ille), s. guardianship; medicine for family use. `IDENA (de-onna), s. a resident officer who sees after the interest of his sovereign within the limit of his territory; the act of watching the road; ambuscade; custom-house; hinderance. IDERI (de-ori), s. cover, lid. IDETÍ (idi-eti), s. the temple of the head.
+**IDEBIPA**, IFEBIPA (da-ebi-pa), s. starvation. IDEHUN (de-ohun), s. bargain, agreement. IDELE (de-ille), s. guardianship; medicine for family use. 'IDENA (de-onna), s. a resident officer who sees after the interest of his sovereign within the limit of his territory; the act of watching the road; ambuscade; custom-house; hinderance. IDERI (de-ori), s. cover, lid. IDETÍ (idi-eti), s. the temple of the head.
 
 **IDE**, s. chase, game, hunting, baiting; setting a trap, tempting, decoying.
 
 **IDE**, S. brass.
 
-**IDE**, s. the act of slackening, loosening, softening, or ripening; glass bottle holding from three to five gallons, called by sailors a demijohn. IDEBBI (da-ebbi), s. judgment, sentence. IDEGBE (de-igbé), s. a hunting, chase. IDERÙ (dì-erù), s. See `IDI. IDERUBA (da-eru-ba), s. alarm; discouragement. IDETÍ (de eti), s. inclination of the ear, listening, hearkening. IDETI (di-eti), s. failure, inability to accomplish. IDEWò (de-wo), s. temptation, trial, snare. IDì, s. eagle.-Idì babba eiye, idì babba akọsà, “The L eagle is the prince of fowls; the eagle is the prince of birds of prey." 'IDI, EDì, the act of binding or packing; bundle; bud; sheaf. Idí, s. waist, rump; cause, reason, conclusion, end; foundation; diminution.-So idí rè fun mi, "Tell me the reason."
+**IDE**, s. the act of slackening, loosening, softening, or ripening; glass bottle holding from three to five gallons, called by sailors a demijohn. IDEBBI (da-ebbi), s. judgment, sentence. IDEGBE (de-igbé), s. a hunting, chase. IDERÙ (dì-erù), s. See 'IDI. IDERUBA (da-eru-ba), s. alarm; discouragement. IDETÍ (de eti), s. inclination of the ear, listening, hearkening. IDETI (di-eti), s. failure, inability to accomplish. IDEWò (de-wo), s. temptation, trial, snare. IDì, s. eagle.-Idì babba eiye, idì babba akọsà, “The L eagle is the prince of fowls; the eagle is the prince of birds of prey." 'IDI, EDì, the act of binding or packing; bundle; bud; sheaf. Idí, s. waist, rump; cause, reason, conclusion, end; foundation; diminution.-So idí rè fun mi, "Tell me the reason."
 
 **IDÍ-AGBADO**, APO-AGBADO, s. a shock of corn.
 
@@ -3035,13 +3035,13 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IFI-MO**, IFORANMÓ (fi-oran-mo), s. suspicion, a fastening upon.
 
-**IFI-SON**, s. accusation. IFITORE (fi-ta-ore), s. gift, present. IFIwo (fi-iwo), s. bait. `IFO, s. the act of flying as a bird, or passing off as a rainy cloud. IFOFó, s. foam, froth.
+**IFI-SON**, s. accusation. IFITORE (fi-ta-ore), s. gift, present. IFIwo (fi-iwo), s. bait. 'IFO, s. the act of flying as a bird, or passing off as a rainy cloud. IFOFó, s. foam, froth.
 
 **IFOLÉ**, s. home-born slave, not born from the original stock of the family. IFORIBALLE (fi-ori-ba-ille), s. submission, obedience. 'IFO-RI-FO, S. flake, sparks.
 
 **IFOYA**, IFOIYA (fò-aìya), s. fear, dread. Iró̟, s. a breaking, as of a vessel; plenty, abundance; bawling, a loud cry.
 
-**IFOKKO**, S. wreck of a ship or canoe. `Irò, s. the act of washing or speaking; utterance. IFOJU (fo-oju), s. blindness. IFOKKANSIN (fi-okkan-sin), s. devotion, soul-service. IFOKKANSO (so), s. confidence, reliance. IFOLLE (fo-ille), s. house-breaking.
+**IFOKKO**, S. wreck of a ship or canoe. 'Irò, s. the act of washing or speaking; utterance. IFOJU (fo-oju), s. blindness. IFOKKANSIN (fi-okkan-sin), s. devotion, soul-service. IFOKKANSO (so), s. confidence, reliance. IFOLLE (fo-ille), s. house-breaking.
 
 **IFON**, IFUN, s. bowels, tripe.
 
@@ -3127,7 +3127,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IGBÓ**, s. old age; the act of barking like a dog.-Je igbó, ję ito, "May you enjoy many days; (lit. eat old age, and longevity)." 'IGBO, s. name of a bird, which feeds on the eggs of other birds.-Igbo wá ille eïyekeiyo tú, "The ìgbo searches the nests of other birds to plunder them."
 
-**IGBO**, EGBO, S. the act of rubbing so as to peel off the husk. `Igbo, s. an idol-sacrifice; assembly of priests; idol-worship; food of the sacrifice.
+**IGBO**, EGBO, S. the act of rubbing so as to peel off the husk. 'Igbo, s. an idol-sacrifice; assembly of priests; idol-worship; food of the sacrifice.
 
 **IGBODÙ**, s. a grove dedicated to the gods ODÙ and IFÁ.
 
@@ -3179,7 +3179,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **VIJA**, S. strife, war, fight, battle, evil. Ija ni iję pe illu npè'o gbogbo won li o ni oruko, "Every one in the assembly has a name; but when you are summoned ' in the name of the assembly' (instead of being summoned in the name of some individual in it, you may be sure that) evil awaits you."-Ija kò bimmọ ki o rò, "Strife never begets a gentle child."
 
-**IJA-IJI**, S. the action of the whirlwind. IJABÁ (ja-ba), s. trouble, annoyance. IJADÁN (je-ada), s. remnants of fruits eaten by bats; gleaning.-Awa kò ri èse he, ijadán li anşa kiri labbe iggi, "We had no shea-nuts to gather%; we were obliged to seek about to pick up the remnants eaten by the bats." (loo `IJA-DU, S. Scramble, eager contest for a thing. IJA-FARA (ja-ifa-ara), s. negligence, sluggishness.
+**IJA-IJI**, S. the action of the whirlwind. IJABÁ (ja-ba), s. trouble, annoyance. IJADÁN (je-ada), s. remnants of fruits eaten by bats; gleaning.-Awa kò ri èse he, ijadán li anşa kiri labbe iggi, "We had no shea-nuts to gather%; we were obliged to seek about to pick up the remnants eaten by the bats." (loo 'IJA-DU, S. Scramble, eager contest for a thing. IJA-FARA (ja-ifa-ara), s. negligence, sluggishness.
 
 **IJAJE**, S. rascal, scoundrel.
 
@@ -3187,7 +3187,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IJANNA**, S. coming into the way; return to the right course.
 
-**IJANNU**, S. bit; instrument used in kidnapping; (also called KANGA).-Ologbon ogbon li aro ijannu, ọkọkan li amọ ìwa enia; abá mò ìwa enia abá bun 'o kò fe adoni jojo bi abajo, "On different plans bits are made; one by one men's characters are known; when the character of a man is once known (to be bad, even) were he to be given to you for a present, you would not have him, for he is as painful to you as a vexatious matter." `IJA-PATI, S. pitched battle, struggle.
+**IJANNU**, S. bit; instrument used in kidnapping; (also called KANGA).-Ologbon ogbon li aro ijannu, ọkọkan li amọ ìwa enia; abá mò ìwa enia abá bun 'o kò fe adoni jojo bi abajo, "On different plans bits are made; one by one men's characters are known; when the character of a man is once known (to be bad, even) were he to be given to you for a present, you would not have him, for he is as painful to you as a vexatious matter." 'IJA-PATI, S. pitched battle, struggle.
 
 **IJÁ-PATI**, S. the act of snatching suddenly from the hand.
 
@@ -3219,7 +3219,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IJEWÓ**, S. confession.
 
-**IJI**, IJIN, S. shadow, shade. IJì, s. fear, dread; any thing startling, surprise. IJí, s. the act of waking, either from sleep, or sluggishness. `IJI, S. whirlwind; tornado.
+**IJI**, IJIN, S. shadow, shade. IJì, s. fear, dread; any thing startling, surprise. IJí, s. the act of waking, either from sleep, or sluggishness. 'IJI, S. whirlwind; tornado.
 
 **IJIANDUDU**, EJINRIN, s. a plant used as medicine for inno fants. IJIGONRON (ji-gonron), s. valley, ravine. L
 
@@ -3227,7 +3227,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IJILLE**, IJINLE (jin-ille), s. depth, profundity. IлIYA (je-iya), s. suffering, passion. IJISEPALLE (iji-se-pa-ille), s. afternoon, (lit. the time the shadow begins to increase as the sun declines).
 
-**IJIN**, JIJIN, 'IJINNA, s. distance, depth. 'IJIGBO, S. chief priests, head worshippers of the gods. IJó, s. dame. Ti ijo ti ayò ni işe idin, wùye wùye ni işe igongò anjo anyo ommo banabana ure oko iggi, "With dancing and with joy moves along the reptile; wrigengling to and fro moves along the worm; (such a movement being considered indicative of pleasure); but be there dancing or rejoicing, the child of banabana (?) (probably an insect constantly carrying about small chips of wood) toils on at its woodcutting;" i. e. others may amuse themselves, but the poor man has no holiday. `IJO, s. the act of leaking. IJOGÚN (ję-ogun), s. succession to an inheritance; IлoGUN, AJAGUN (ja-ogun), s. soldier, warrior.
+**IJIN**, JIJIN, 'IJINNA, s. distance, depth. 'IJIGBO, S. chief priests, head worshippers of the gods. IJó, s. dame. Ti ijo ti ayò ni işe idin, wùye wùye ni işe igongò anjo anyo ommo banabana ure oko iggi, "With dancing and with joy moves along the reptile; wrigengling to and fro moves along the worm; (such a movement being considered indicative of pleasure); but be there dancing or rejoicing, the child of banabana (?) (probably an insect constantly carrying about small chips of wood) toils on at its woodcutting;" i. e. others may amuse themselves, but the poor man has no holiday. 'IJO, s. the act of leaking. IJOGÚN (ję-ogun), s. succession to an inheritance; IлoGUN, AJAGUN (ja-ogun), s. soldier, warrior.
 
 **IJOKO**, S. settlement, abode, estate.
 
@@ -3287,7 +3287,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IKOKO**, IKORIKOò, s. wolf.
 
-**IKOKO**, s. pot, saucepan.-Agbara odó kò jo agbara ìkoko, bi agbé odó kà iná ajó, bi asì gun iyán ni ìkoko alu, "The strength of a (wooden) mortar is not like the strength of an (earthen) pot; place a mortar on the fire, and it will burn; pound a yam in a pot, and it will break through (the bottom)." `IKOKO-ìŞA, s. a small pot. 'IKOKO-TABA, S. pipe, bowl of a pipe, (called also OGUNSO).
+**IKOKO**, s. pot, saucepan.-Agbara odó kò jo agbara ìkoko, bi agbé odó kà iná ajó, bi asì gun iyán ni ìkoko alu, "The strength of a (wooden) mortar is not like the strength of an (earthen) pot; place a mortar on the fire, and it will burn; pound a yam in a pot, and it will break through (the bottom)." 'IKOKO-ìŞA, s. a small pot. 'IKOKO-TABA, S. pipe, bowl of a pipe, (called also OGUNSO).
 
 **IKOLO**, s. a carrying away.
 
@@ -3465,7 +3465,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IMO**, s. the nose.
 
-**IMO**, IMU, s. the act of drinking; the act of building. `IMO, s. knowledge; interpretation.-Tú ìmo òro na ki o le iye'ni, "Interpret the word to me that it may be intelligible."
+**IMO**, IMU, s. the act of drinking; the act of building. 'IMO, s. knowledge; interpretation.-Tú ìmo òro na ki o le iye'ni, "Interpret the word to me that it may be intelligible."
 
 **IMO-OSON**, s. a small-leaved plant found by the waterside and in mountain regions (used symbollically, to indicate that a matter is well known).
 
@@ -3601,7 +3601,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IPON**, s. thickness.-Awo yi ni ipon, "This place is crowded."
 
-**IPON**, S. wooden spoon. IPONJU (pon-oju), s. difficulty, distress, necessity, affliction, adversity. IPORI (ipo-ori), s. the great toe, (worshipped by the Yorubas). IPOSI (si), s. contempt, scorn, worthlessness, meanness. -Okonri na yan mi ni iposi, "That man holds me sabelwounds I bluoda in contempt." 'IRA, S. the name of a tree; (called also WUSMA). `IRA, s. the act of buying; decay; rottenness; depression, discouragement.
+**IPON**, S. wooden spoon. IPONJU (pon-oju), s. difficulty, distress, necessity, affliction, adversity. IPORI (ipo-ori), s. the great toe, (worshipped by the Yorubas). IPOSI (si), s. contempt, scorn, worthlessness, meanness. -Okonri na yan mi ni iposi, "That man holds me sabelwounds I bluoda in contempt." 'IRA, S. the name of a tree; (called also WUSMA). 'IRA, s. the act of buying; decay; rottenness; depression, discouragement.
 
 **IRA**, s. morass, bog, fen. X
 
@@ -3685,7 +3685,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **IRÓ**, s. sound, noise made by collision; news, intelligence; standing posture; erection of a roof. IROBINOJE (ro-ba-ino-je), s. remorse, pain, grief, anguish. IROJÚ (ro-oju), s. sorrow; vexation; perplexity; indecision.
 
-**IROKO**, S. farm labour; agriculturist. `IROKO, s. a species of the OKRO. IROKó, s. a running vegetable, whose leaf is used for sauce. IROKò, s. the name of a tree used in building.-Ni kekere li ati ipa ekan irokò, "The sprout of the irokò tree must be plucked when it is yet tender." IROKURÒ (ro-ki-iro), s. concupiscence, evil desire. IRONA (ro-onna), s. the act of meeting by appointment; a spy who reconnoitres an enemy's position.
+**IROKO**, S. farm labour; agriculturist. 'IROKO, s. a species of the OKRO. IROKó, s. a running vegetable, whose leaf is used for sauce. IROKò, s. the name of a tree used in building.-Ni kekere li ati ipa ekan irokò, "The sprout of the irokò tree must be plucked when it is yet tender." IROKURÒ (ro-ki-iro), s. concupiscence, evil desire. IRONA (ro-onna), s. the act of meeting by appointment; a spy who reconnoitres an enemy's position.
 
 **IRONO**, s. consideration, or stirring up the mind.
 
@@ -3743,7 +3743,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ISI-MI**, s. rest, pause.
 
-**ISIMI**, S. rest, cessation from work. `ISIN, s. service, the act of serving another; the act of tending cattle; religion.
+**ISIMI**, S. rest, cessation from work. 'ISIN, s. service, the act of serving another; the act of tending cattle; religion.
 
 **ISIN**, s. the act of burying or hiding. ISINKU (sìn-okú), s. burial, funeral, burying of the dead.
 
@@ -3805,7 +3805,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ISU-ODDE**, s. a wild yam, eaten by hunters.
 
-**ISU-OPE**, s. palm-cabbage. `ITA, s. act of selling, sale; a kind of yellow ant, called also OTTA, or ITTA, a formidable foe to the white ant.
+**ISU-OPE**, s. palm-cabbage. 'ITA, s. act of selling, sale; a kind of yellow ant, called also OTTA, or ITTA, a formidable foe to the white ant.
 
 **ITA**, s. street, an open place in the front of a building; the open air.-Itta metta kò konno ebo, "The junction of the roads does not dread sacrifices." Sacrifices intended to avert calamity are always exposed in a place where several ways meet, whereby the impending evil is supposed to be altogether dissipated.
 
@@ -3825,7 +3825,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ITAN**, s. thigh, lap.
 
-**ITÁN**, s. completion. ITANNÁ (tan-ina), s. the act of lighting a lamp; flowers, (so called from their brilliant colour). ITANJE (tan-je), s. deceit, guile. ITARA (ta-ára), s. hastiness; anxiety for another's safety; zeal.-Itara mi pò̟ jù, "My anxiety is be great." `ITI, s. timber, any large piece of wood; the act of supporting or propping.-Bi ìti kò wó o̟wó̟ ki ibà isepé, "Unless the tree falls, one will never get at the branches." Irí, s. a small bundle of grass, a handful of grass bound together.
+**ITÁN**, s. completion. ITANNÁ (tan-ina), s. the act of lighting a lamp; flowers, (so called from their brilliant colour). ITANJE (tan-je), s. deceit, guile. ITARA (ta-ára), s. hastiness; anxiety for another's safety; zeal.-Itara mi pò̟ jù, "My anxiety is be great." 'ITI, s. timber, any large piece of wood; the act of supporting or propping.-Bi ìti kò wó o̟wó̟ ki ibà isepé, "Unless the tree falls, one will never get at the branches." Irí, s. a small bundle of grass, a handful of grass bound together.
 
 **ITI**, s. the act of breaking a portion of any thing brittle. ITIJÚ (ti-oju), s. disgrace, shame; bashfulness, modesty. Bi o ba tiju o ti i fu ra re, "If you are modest, you are modest to your own advantage." ITILEHIN (-ni-ehin), s. support, help, assistance, countenance. ITISSE (te-esse), s. footstool,
 
@@ -3837,7 +3837,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ITEDÓ**, s. encampment.
 
-**ITEHÌN**, s. pad or saddle-cloth. ITEDDO (te-eddo), s. patience, leisure.-Fi iteddo sille se e, "Do it patiently." ITELLE (te-ille), s. the leg (of an animal). ITELLE (te-ille), s. foundation, that which is underneath. ITELLEDI (idi), s. cloth for common use, under-cloth. ITELESSE (-ni-esse), s. private intimation (as a nod, wink, or tread on the foot); sign, token, beckoning. ITEMOLLE (te-mo-ille), s. a pressing down, a trampling down. ITENILORON (-enni-ni-oròn), s. satisfaction. ITENUMO (te-ennu-mo), s. the act of urging the same subject by constant repetition of it. ITERIBA (ori-ba), s. bending of the head, bow, submission. ITESSE (te-esse), s. part of a loom, treadle; any thing to place the foot on; a private informant. See `OTESSE.
+**ITEHÌN**, s. pad or saddle-cloth. ITEDDO (te-eddo), s. patience, leisure.-Fi iteddo sille se e, "Do it patiently." ITELLE (te-ille), s. the leg (of an animal). ITELLE (te-ille), s. foundation, that which is underneath. ITELLEDI (idi), s. cloth for common use, under-cloth. ITELESSE (-ni-esse), s. private intimation (as a nod, wink, or tread on the foot); sign, token, beckoning. ITEMOLLE (te-mo-ille), s. a pressing down, a trampling down. ITENILORON (-enni-ni-oròn), s. satisfaction. ITENUMO (te-ennu-mo), s. the act of urging the same subject by constant repetition of it. ITERIBA (ori-ba), s. bending of the head, bow, submission. ITESSE (te-esse), s. part of a loom, treadle; any thing to place the foot on; a private informant. See 'OTESSE.
 
 **ITÉWO**, ITEWOGBA (te-owo-gba), s. acceptance, reception. ITORí, s. cause, reason.
 
@@ -3893,7 +3893,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **AGIDI**. IYALLETA (-ille-ta), s. the early part of the e morning, about eight or nine o'clock.
 
-**IYÁN**, s. pounded yams. `IYÁN, s. act of neighing like a horse, act of gaping.
+**IYÁN**, s. pounded yams. 'IYÁN, s. act of neighing like a horse, act of gaping.
 
 **IYAN-RINDIDE**, S. quicksand.
 
@@ -4791,7 +4791,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ODE**, s. out-of-doors, street. ODE s. a kind of small bat.-Bi akò rí adán afi òde sebo, "Ifyou cannot obtain a large bat for sacrifice, a small one will do instead;" i.e. one must take the will for the deed. ODì, s. malice.--Bi inó kò li odi, odì ani inó, "If a man (lit. the mind) is not malicious, some one will be malicious against him."
 
-**ODI**, s. a walled fortification round the town, fort; a dumb person, one who has lost the power of speech. `ODI, s. contrariety, perverseness.
+**ODI**, s. a walled fortification round the town, fort; a dumb person, one who has lost the power of speech. 'ODI, s. contrariety, perverseness.
 
 **ODIDI**, S. bunch, cluster, the whole of any thing.
 
@@ -4841,7 +4841,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OGÉDE**, adv. only.
 
-**OGEDEGBE**, OGEDEMGBE, adv. headlong, precipitately.`OGI Ogedemgbé iró kì idá ni sí ìyẹwu gbangba ni idá ni sí, "The headlong fall of a liar is not concealed, but is exposed to view."
+**OGEDEGBE**, OGEDEMGBE, adv. headlong, precipitately.'OGI Ogedemgbé iró kì idá ni sí ìyẹwu gbangba ni idá ni sí, "The headlong fall of a liar is not concealed, but is exposed to view."
 
 **OGI**, s. starch of Indian corn.
 
@@ -4851,9 +4851,9 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OGIRI**, S wall (of mud, stone, or brick).
 
-**OGIRI**, s. gallop, simultaneous rush.-Eşin dógiri, "The horse galloped." to readout obam `OGIRI, S. preparation made from YONMOTI seed to flavour stews.
+**OGIRI**, s. gallop, simultaneous rush.-Eşin dógiri, "The horse galloped." to readout obam 'OGIRI, S. preparation made from YONMOTI seed to flavour stews.
 
-**OGO**, s. glory, praise; wonder; a valiant man.-Ilerí ille kò mó ajagun, kufẹkufe kò mo ija, ijo ti ari ogun li amọ ogo, "Boasting at home is not valour; parade is not battle: when war is seen the valiant will be known." `OGO, s. one placed at the debtor's house to compel payment of a debt; bailiff.
+**OGO**, s. glory, praise; wonder; a valiant man.-Ilerí ille kò mó ajagun, kufẹkufe kò mo ija, ijo ti ari ogun li amọ ogo, "Boasting at home is not valour; parade is not battle: when war is seen the valiant will be known." 'OGO, s. one placed at the debtor's house to compel payment of a debt; bailiff.
 
 **OGODO**, s. calf; colt; the young of beasts in general.
 
@@ -4883,7 +4883,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OGURODÒ**, s. the name of a bird, whose nest the natives have a superstitious dread of touching.
 
-**OGURODO**, s. standing posture.qu `OGURO, S. wine made from the sap of the bamboo. OGUSò, s. pipe. OHO-ò! interj. a word of exclamation.
+**OGURODO**, s. standing posture.qu 'OGURO, S. wine made from the sap of the bamboo. OGUSò, s. pipe. OHO-ò! interj. a word of exclamation.
 
 **OHÙN**, S. voice, sound, note, cry.
 
@@ -4899,7 +4899,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OJE**, S. sap of trees.
 
-**OJE**, S. lead. 'OJI `OJI, adj. forty. OJì, s. fine imposed for the guilt of adultery.
+**OJE**, S. lead. 'OJI 'OJI, adj. forty. OJì, s. fine imposed for the guilt of adultery.
 
 **OJIA**, S. gum of trees.-Iggi iyá ni isọn ojia, "The iyá tree produces gums."
 
@@ -4907,7 +4907,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OJIJÌ**, adv. suddenly, without previous notice. ОJIJI, S. OJI, shadow, shade.
 
-**OJÍJI**, S. an electrical fish, electrical eel. `ОлIYA (ję-ìya), s. an innocent sufferer, an oppressed person. ОJIYAN (ja-iyan), s. a denier, reasoner, one who contradicts. `OJO, s. rain.-Gègele li o bi gegele kòto li o bí kòto, òjo rò si kòto gegele nrojú, "Bank rises after bank, and ditch follows after ditch; when the rain falls into the ditch, the banks are envious;" said of those who are not satisfied with their position in life.
+**OJÍJI**, S. an electrical fish, electrical eel. 'ОлIYA (ję-ìya), s. an innocent sufferer, an oppressed person. ОJIYAN (ja-iyan), s. a denier, reasoner, one who contradicts. 'OJO, s. rain.-Gègele li o bi gegele kòto li o bí kòto, òjo rò si kòto gegele nrojú, "Bank rises after bank, and ditch follows after ditch; when the rain falls into the ditch, the banks are envious;" said of those who are not satisfied with their position in life.
 
 **OJO**, S. cowardice, fear; a coward. OJOGUN (je-ogun), s. heir. 'OJOJO, S. ague-fit. OJOJULLE (oju-oju-ille), adv. (from) house to house. OJOJUMÓ (-mo), adv. daily, every day.
 
@@ -4939,7 +4939,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OKAN**, OWO-KAN, s. one cowry; one piece of money; halfpenny.
 
-**ÕKAN-AIYA**, S. chest, breast. `OKE, s. top, hill, mountain; adv. up hill. `OKELE, s. morsel, sop.-Okele gbòmgbo fè ommo li ojú, in"A large morsel (is sure to) choke a child."
+**ÕKAN-AIYA**, S. chest, breast. 'OKE, s. top, hill, mountain; adv. up hill. 'OKELE, s. morsel, sop.-Okele gbòmgbo fè ommo li ojú, in"A large morsel (is sure to) choke a child."
 
 **OKELÉ**, s. a small package of salt.
 
@@ -4959,7 +4959,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OKIRIBITI**, S. circle, encompassed space.
 
-**OKITI**, OKITI-OGÁN, s. hill made by the white ant. `OKITI, S. Summerset, headlong fall; hillock, such as may be seen where roads divide.
+**OKITI**, OKITI-OGÁN, s. hill made by the white ant. 'OKITI, S. Summerset, headlong fall; hillock, such as may be seen where roads divide.
 
 **OKITI-ALAPINI**, s. the name of a place in Oyo the capital.
 
@@ -4995,7 +4995,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OKUN-OLE**, S. name of a running plant.
 
-**OKUN-TINRIN**, s. twine. `OKU
+**OKUN-TINRIN**, s. twine. 'OKU
 
 **OKUN**, OKUNKUN, s. darkness.
 
@@ -5217,7 +5217,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OPIN**, s. termination, point.-Oran na de opin, "The matter is come to a point (lit. to the highest point)." OPINLE (opin-ille), s. termination of the earth, land, or territory. Opo, s. the place where the king makes his appearance in the palace, bank of earth for sleeping on. OPó, s. post, pillar; widow.
 
-**OPO-OKKO**, S. mast of a ship. `OPOPO, s. kind of banyan. Opópo, s. wide road leading immediately into a town. 'OPORO, adj. common.
+**OPO-OKKO**, S. mast of a ship. 'OPOPO, s. kind of banyan. Opópo, s. wide road leading immediately into a town. 'OPORO, adj. common.
 
 **ORA**, s. buyer, purchaser.-Kò mò ore kò mò orà, ti igùn eşin apatta, "Regardless of kindness, regardless of the purchaser, (the ungrateful man) rides the horse (which has been lent him) over the rocks."
 
@@ -5313,11 +5313,11 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **ORUWON**, S. name of a tree. Osé, Osé, s. hippopotamus.
 
-**OSE**, s. paint. `OSIN, adj. the left. s. a post of honour. 'OSIN-IWEFFA, s. a eunuch of the third degree. 'OSIN-IYAMA, s. the south with the face to the west. 'OSIN-IYALODE, s. a title next to OTTON-IYALODE.
+**OSE**, s. paint. 'OSIN, adj. the left. s. a post of honour. 'OSIN-IWEFFA, s. a eunuch of the third degree. 'OSIN-IYAMA, s. the south with the face to the west. 'OSIN-IYALODE, s. a title next to OTTON-IYALODE.
 
 **OSE**, s. name of a tree. Osé, s. club of SANGO. Osé, s. a sound made by smacking the lips expressive of grief. See ABAMO.
 
-**OSESE**, s. meat of a superior quality. `Oşı, s. misery. OsĭSE, OTOȘI (se-ise), s. poor, miserable person. OŞIPI, s. tree, in the leaf of which snuff is frequently wrapped up. Osó, s. witch, sorcerer. OsONó, s. sour, passionate, morose man. Osù, s. new moon, month. Oşu, s. a lock of hair shaved around.
+**OSESE**, s. meat of a superior quality. 'Oşı, s. misery. OsĭSE, OTOȘI (se-ise), s. poor, miserable person. OŞIPI, s. tree, in the leaf of which snuff is frequently wrapped up. Osó, s. witch, sorcerer. OsONó, s. sour, passionate, morose man. Osù, s. new moon, month. Oşu, s. a lock of hair shaved around.
 
 **OSUMARE**, S. the rainbow.
 
@@ -5329,7 +5329,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OTITO**, s. truth, faithfulness.
 
-**OTONPANYAN**, S. mean fellow who causes much trouble. `OTOLO, s. a species of deer. 2 G
+**OTONPANYAN**, S. mean fellow who causes much trouble. 'OTOLO, s. a species of deer. 2 G
 
 **OTOSI**, s. poor, miserable person.-Nwon sebi òtoşi ko gbón bi oloro, nwon ni o gbón iba ilowo? "Men think that the poor is not as wise as the rich, for if he were wise, why is he poor?"
 
@@ -5341,7 +5341,7 @@ source_note: "Machine OCR, re-run 2026-07-25 by the corpus's two-engine pipeline
 
 **OTUTU-MU**, defect. v. "It is cold, (lit. cold is sharp)."
 
-**OWE**, s. parable, riddle.-Owe li esin òro bi òro ba nò owe li afi iwa a, owe on òro ni irìn, "A proverb is the horse of conversation; when the conversation flags (lit. is lost), a proverb revives it: proverbs and conversation follow each other." `OWE, s. young leaf of the plant EREWE. `OWE-AWỌN, s. a kind of running trefoil. `OWERE, S. struggle, effort to recover oneself.
+**OWE**, s. parable, riddle.-Owe li esin òro bi òro ba nò owe li afi iwa a, owe on òro ni irìn, "A proverb is the horse of conversation; when the conversation flags (lit. is lost), a proverb revives it: proverbs and conversation follow each other." 'OWE, s. young leaf of the plant EREWE. 'OWE-AWỌN, s. a kind of running trefoil. 'OWERE, S. struggle, effort to recover oneself.
 
 **OWEREJEJE**, IWEREJEJE, S. name of a trailing shrub, the berries of which are red and black. OwIwi, s. owl. Owo, s. boil.-Owo so mi, "I am attacked by boils." Owó, s. money, cowry. Owo-NLÁ, s. large piece of money, dollar. OwOSE (owo-ise), s. work-money, wages. Owu, s. cotton, thread, wick. Owú, s. jealousy.
 

@@ -7,7 +7,7 @@ source: Wikisource (tr)
 source_url: "https://tr.wikisource.org/wiki/Ka%C5%9Fa%C4%9F%C4%B1"
 license: Public domain in the United States
 year_note: Five stories first published 1917-1919 in Ottoman-script periodicals; the author died in 1920.
-source_note: tr.wikisource Latin-script transliteration of the pre-1929 Ottoman-script originals (the 1928 alphabet reform postdates publication); orthographic conversion only, not a new edition. Correction 2026-07-25: a leftover external-site citation line (Kaynakça) at the end of the last story removed as transcription apparatus.
+source_note: "tr.wikisource Latin-script transliteration of the pre-1929 Ottoman-script originals (the 1928 alphabet reform postdates publication); orthographic conversion only, not a new edition. Correction 2026-07-25: a leftover external-site citation line (Kaynakça) at the end of the last story removed as transcription apparatus."
 selection_note: Five canonical stories - Kasagi, Pembe Incili Kaftan, Falaka, Diyet, Basini Vermeyen Sehit.
 ---
 ## Kaşağı

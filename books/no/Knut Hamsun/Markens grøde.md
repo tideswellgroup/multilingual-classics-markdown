@@ -2,7 +2,7 @@
 title: Markens grøde
 title_en: Growth of the Soil
 author: Knut Hamsun
-language: no
+language: "no"
 year: 1917
 source: Project Gutenberg
 source_url: "https://www.gutenberg.org/ebooks/43724"

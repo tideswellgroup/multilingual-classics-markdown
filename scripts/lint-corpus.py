@@ -79,9 +79,15 @@ LOCALE_SCRIPT_BLOCKS: dict[str, list[tuple[int, int]]] = {
 HTML_TAGS_OF_CONCERN = re.compile(
     r"<(?:p|div|span|table|tr|td|th|tbody|thead|tfoot|a|img|ul|ol|li|"
     r"section|article|header|footer|nav|aside|figure|figcaption|"
-    r"strong|em|b|i|u|s|br|hr|caption|colgroup|col)(?:\s[^>]*)?>",
+    r"strong|em|b|i|u|s|br|hr|caption|colgroup|col|"
+    r"small|big|font|center|sup|sub)(?:\s[^>]*)?>",
     re.IGNORECASE,
 )
+
+# Plain scalars that YAML 1.1 parsers coerce to booleans or null instead of
+# strings (pyyaml turns `language: no` into False). Values matching these
+# must be quoted in frontmatter.
+YAML_COERCED_SCALARS = {"y", "yes", "n", "no", "on", "off", "true", "false", "null", "~"}
 
 
 def check_frontmatter(text: str, path: Path | None = None) -> list[Issue]:
@@ -106,6 +112,24 @@ def check_frontmatter(text: str, path: Path | None = None) -> list[Issue]:
         v = year_line.group(1).strip()
         if v and v[0] not in '"' and not v.lstrip("-").isdigit():
             issues.append(Issue("warn", 1, "FM004", f"year value {v!r} should be quoted (non-integer)"))
+    # The repo's own tooling reads frontmatter with a regex, but external
+    # consumers feed these blocks to strict YAML parsers; catch the two ways
+    # an unquoted plain scalar silently breaks there.
+    for lineno, line in enumerate(fm.split("\n"), start=2):
+        m = re.match(r"^([A-Za-z_][A-Za-z0-9_-]*):\s+(\S.*)$", line)
+        if not m:
+            continue
+        key, value = m.group(1), m.group(2).rstrip()
+        if value[0] in "\"'":
+            continue
+        if ": " in value or value.endswith(":"):
+            issues.append(Issue(
+                "error", lineno, "FM005",
+                f"unquoted {key} value contains a colon that breaks strict YAML parsers; quote the value"))
+        if value.lower() in YAML_COERCED_SCALARS:
+            issues.append(Issue(
+                "error", lineno, "FM006",
+                f"{key} value {value!r} parses as a YAML boolean/null, not a string; quote it"))
     return issues
 
 

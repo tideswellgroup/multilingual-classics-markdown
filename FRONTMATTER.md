@@ -94,7 +94,7 @@ Edit the YAML block directly, keeping the field order of neighboring books where
 python3 scripts/lint-corpus.py books/<your-file>.md
 ```
 
-The linter checks frontmatter presence, required fields, and quoting of non-integer years. The [CONTRIBUTING](CONTRIBUTING.md) PR checklist covers the rest.
+The linter checks frontmatter presence, required fields, and quoting of non-integer years. It also errors on two ways an unquoted value breaks a strict YAML parser: a value containing `: ` is a YAML syntax error, and a value that YAML 1.1 reads as a boolean or null (`no`, `yes`, `on`, `off`, `true`, `false`, `null`) comes back as the wrong type (`language: no` parses as `False`, not the Norwegian language code). Quote any such value. The [CONTRIBUTING](CONTRIBUTING.md) PR checklist covers the rest.
 
 ## Using the corpus without frontmatter
 
