@@ -12,7 +12,23 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
-## Unreleased
+## wave-2026-09-07
+
+137 books in 58 locales, to 137 books in 58.
+
+### Revised text (7 books)
+
+es-MX (1), mi (1), no (1), sw (1), ta (1), tr (1), yo (1)
+
+A strict-YAML frontmatter pass and a Markdown-residue sweep from the 2026-08-04 audit. Three frontmatter values that broke strict YAML are now quoted: colons in the mi and tr source notes, and `language: no` parsing as boolean false. Linter rules FM005 and FM006 were added so the class cannot recur. Body residue: the yo *Vocabulary of the Yoruba Language*'s 39 stray backticks became apostrophes, the es-MX *Tomóchic*'s two stray backticks were removed, and the ta *National Songs*' small-tag pair was removed. Each body change is disclosed in its book's source note; the full account is in QUALITY.md's resolved log.
+
+The sw *Safari za Wasuaheli* takes nine single-character OCR repairs (as-5ubuhi, a$-subuhi, n4, y4, m4'ana, t4laga), each accepted only where the repaired form is attested in the file itself often enough to be the evidence. The period orthography and the nus$ family are deliberately untouched, and the fluent read that closes the book's QUALITY.md flag is still owed.
+
+### Deposit and tooling
+
+`.zenodo.json` carries the description Zenodo reads at release time, count-checked and JSON-gated in CI. The README adds a Croissant badge and three audience bullets. `lint-corpus.py` gains the two frontmatter rules above.
+
+## wave-2026-08-03
 
 134 books in 55 locales, to 137 books in 58.
 
