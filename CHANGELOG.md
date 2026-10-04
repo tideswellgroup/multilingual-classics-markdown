@@ -12,6 +12,30 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
+## wave-2026-10-04
+
+137 books in 58 locales, to 145 books in 66.
+
+### New locales (8)
+
+- **bo**: Anonymous, *Old Tibetan Chronicle*
+- **gu**: ગોવર્ધનરામ માધવરામ ત્રિપાઠી, *સરસ્વતીચંદ્ર, ભાગ ૧* (Sarasvatichandra, Part 1)
+- **kn**: ಪಂಜೆ ಮಂಗೇಶರಾವ್, *ಕೋಟಿ ಚೆನ್ನಯ* (Koti and Chennaya)
+- **ml**: ഒ. ചന്തുമേനോൻ, *ഇന്ദുലേഖ* (Indulekha)
+- **mr**: हरि नारायण आपटे, *स्फुट गोष्टी भाग ४ था* (Miscellaneous Stories, Part 4)
+- **or**: ଫକୀର ମୋହନ ସେନାପତି, *ଛମାଣ ଆଠଗୁଣ୍ଠ* (Six Acres and a Third)
+- **pa**: ਸ਼ਾਹ ਮੁਹੰਮਦ, *ਜੰਗਨਾਮਾ* (The Book of the War)
+- **te**: గురజాడ వేంకట అప్పారావు, *కన్యాశుల్కము* (The Bride-Price)
+
+Eight wishlist locales arrive with one book each, and seven new script systems with them: Gurmukhi, Gujarati, Odia, Telugu, Kannada, Malayalam and Tibetan (Marathi is the corpus's second Devanagari language). Each candidate was qualified before it was fetched; [sources/2026-10-04-coverage-push.md](sources/2026-10-04-coverage-push.md) records the picks, the books passed over and why, and why Sinhala, Burmese, Khmer and Lao stay open for now.
+
+Every text was checked to be Unicode in its own script rather than a legacy font encoding, and each book's source_note records how. Several transcriptions carried systematic faults, which are repaired as counted classes and disclosed: Gujarati digits typed for the letters they resemble, an Odia conjunct mis-mapped from the digital edition's font, Malayalam old-font digit letters, and a Kannada digit for the anusvara. The Punjabi *Jangnama* is rebuilt into its four-line stanzas from the 1904 printing's danda marks, with seven slips corrected against the page images. The *Old Tibetan Chronicle* is the corpus's second book under the manuscript-works exception and its second with a scholarly layer it does not own, a CC BY 4.0 transcription from Old Tibetan Documents Online; the README and LICENSE-CONTENT.md say so. Open flags for the gu, pa, or and kn books are in QUALITY.md.
+
+### Tooling
+
+The bn ProofreadPage walker now serves any Wikisource, with new behaviour behind options so the Bengali books rebuild unchanged, and five book-specific converters build on it. `scripts/rebuild-2026-10-books.sh` records the exact command for each new book.
+
+
 ## wave-2026-09-07
 
 137 books in 58 locales, to 137 books in 58.
