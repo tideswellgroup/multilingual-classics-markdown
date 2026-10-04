@@ -45,7 +45,7 @@
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "multilingual-classics-markdown",
-  "description": "A curated corpus of public-domain literary classics in 45 languages across 58 locales, converted to clean Markdown with YAML frontmatter. It spans 14 language families and 12 script systems, including Latin with rich diacritics, Cyrillic, polytonic Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Tamil, Han, kana, Hangul, the Thai abugida, the Cherokee syllabary, three constructed auxiliary languages, and the historical stages of English from Old English to original-spelling Early Modern. Every text is public domain in the United States and carries per-record provenance: the upstream archive, the exact source URL fetched, the publication year of the cited source edition, and notes recording what was excerpted, corrected or left alone. Books whose text falls below the corpus fidelity bar declare a machine-readable text_quality tier so they can be filtered out in one line. Built as a drop-in multilingual test corpus for rendering and typography work, and usable as a small, clean, permissively licensed literary dataset.",
+  "description": "A curated corpus of public-domain literary classics in 53 languages across 66 locales, converted to clean Markdown with YAML frontmatter. It spans 14 language families and 19 script systems, including Latin with rich diacritics, Cyrillic, polytonic Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Han, kana, Hangul, the Thai abugida, the Cherokee syllabary, three constructed auxiliary languages, and the historical stages of English from Old English to original-spelling Early Modern. Every text is public domain in the United States and carries per-record provenance: the upstream archive, the exact source URL fetched, the publication year of the cited source edition, and notes recording what was excerpted, corrected or left alone. Books whose text falls below the corpus fidelity bar declare a machine-readable text_quality tier so they can be filtered out in one line. Built as a drop-in multilingual test corpus for rendering and typography work, and usable as a small, clean, permissively licensed literary dataset.",
   "url": "https://github.com/tideswellgroup/multilingual-classics-markdown",
   "sameAs": "https://github.com/tideswellgroup/multilingual-classics-markdown",
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -114,7 +114,7 @@
     "@type": "sc:Person",
     "name": "Simon Powell"
   },
-  "citeAs": "@software{powell_multilingual_classics_markdown,\n  author = {Powell, Simon},\n  title = {multilingual-classics-markdown: Public-domain literary classics in 45 languages},\n  url = {https://github.com/tideswellgroup/multilingual-classics-markdown},\n  year = {2026}\n}",
+  "citeAs": "@software{powell_multilingual_classics_markdown,\n  author = {Powell, Simon},\n  title = {multilingual-classics-markdown: Public-domain literary classics in 53 languages},\n  url = {https://github.com/tideswellgroup/multilingual-classics-markdown},\n  year = {2026}\n}",
   "isLiveDataset": true,
   "personalSensitiveInformation": false,
   "dataCollection": "Texts were sourced from volunteer digitisation projects (Project Gutenberg, per-language Wikisource, Aozora Bunko, Project Ben-Yehuda, Ganjoor, the Saga Database, Project Madurai, NZETC and the Internet Archive) and converted with per-source scripts held in scripts/. Selection is curated rather than exhaustive: canonical works are preferred, sacred and liturgical texts are excluded by rule, and each locale carries two or three works where sources permitted. Every substitution and judgment call is recorded in CORPUS.md.",
@@ -157,7 +157,7 @@
       "@type": "cr:RecordSet",
       "@id": "books_index",
       "name": "books_index",
-      "description": "One record per work, drawn from manifest.json. The 137 records cover 58 locales. Fields mirror the YAML frontmatter specified in FRONTMATTER.md.",
+      "description": "One record per work, drawn from manifest.json. The 145 records cover 66 locales. Fields mirror the YAML frontmatter specified in FRONTMATTER.md.",
       "key": {
         "@id": "books_index/path"
       },

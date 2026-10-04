@@ -1,8 +1,8 @@
 # multilingual-classics-markdown
 
-[![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 137](https://img.shields.io/badge/books-137-blue.svg)](CORPUS.md) [![Locales: 58](https://img.shields.io/badge/locales-58-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
+[![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 145](https://img.shields.io/badge/books-145-blue.svg)](CORPUS.md) [![Locales: 66](https://img.shields.io/badge/locales-66-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
 
-> A curated corpus of public-domain literary classics in 45 languages across 58 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Tamil, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 137 books across 14 language families and 12 script systems.
+> A curated corpus of public-domain literary classics in 53 languages across 66 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 145 books across 14 language families and 19 script systems.
 
 This repo is intended as a complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown), 
 delivering the languages, the historical Englishes (Old English, Middle English, original-spelling Early Modern), and the regional English literatures that modern-spelling English corpora do not carry. It was built so that application developers, NLP researchers, language learners, and typography enthusiasts can drop a real-world multilingual corpus into their workflow as easily as possible. The en-US and modern-spelling en-GB canon, which mlschmitt's project already does well, are deliberately absent.
@@ -11,9 +11,9 @@ delivering the languages, the historical Englishes (Old English, Middle English,
 
 | | |
 |---|---|
-| **Languages** | 45 languages across 58 locales and 14 language families |
-| **Books** | 137 individual works, ~26 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
-| **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Tamil, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
+| **Languages** | 53 languages across 66 locales and 14 language families |
+| **Books** | 145 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
+| **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
 | **License** | Content: CC0 (where public-domain content needs a license at all). Tooling: MIT |
 | **Fidelity** | Faithful renditions of named source editions, not critical editions. See [Scholarly use and limitations](#scholarly-use-and-limitations) before citing |
 | **Provenance** | Every book carries source URL, original publication year, and license posture in YAML frontmatter |
@@ -79,8 +79,11 @@ If you'd like to know more about how these tags work, Wikipedia's [IETF language
 | Indo-European, Slavic | Latin (háček, kroužek) | cs | 2 |
 | Indo-European, Hellenic | Greek (polytonic) | grc, el | 2 |
 | Indo-European, Italic | Latin (macronised) | la | 1 |
-| Indo-European, Indo-Iranian | Devanagari | hi | 3 |
+| Indo-European, Indo-Iranian | Devanagari | hi, mr | 4 |
 | Indo-European, Indo-Iranian | Bengali | bn | 3 |
+| Indo-European, Indo-Iranian | Gurmukhi | pa | 1 |
+| Indo-European, Indo-Iranian | Gujarati | gu | 1 |
+| Indo-European, Indo-Iranian | Odia | or | 1 |
 | Indo-European, Indo-Iranian | Perso-Arabic | fa, ur | 6 |
 | Indo-European, Celtic | Latin (with digraphs / accents) | cy, ga, gd | 5 |
 | Indo-European, Old Norse | Latin (with þ ð) | is | 3 |
@@ -88,6 +91,7 @@ If you'd like to know more about how these tags work, Wikipedia's [IETF language
 | Afro-Asiatic, Semitic | Arabic | ar | 3 |
 | Sino-Tibetan, Sinitic | Han (Simplified) | zh-Hans | 4 |
 | Sino-Tibetan, Sinitic | Han (Traditional) | zh-Hant | 4 |
+| Sino-Tibetan, Tibetic | Tibetan (Old Tibetan orthography) | bo | 1 |
 | Japonic | Hiragana / Katakana / Han | ja | 5 |
 | Koreanic | Hangul (incl. old-hangul and mixed Hanja-Hangul) | ko | 5 |
 | Austroasiatic | Latin (Vietnamese) | vi | 3 |
@@ -98,6 +102,9 @@ If you'd like to know more about how these tags work, Wikipedia's [IETF language
 | Uralic, Finnic | Latin | fi | 3 |
 | Turkic | Latin (1928 reform orthography) | tr | 1 |
 | Dravidian | Tamil | ta | 3 |
+| Dravidian | Telugu | te | 1 |
+| Dravidian | Kannada | kn | 1 |
+| Dravidian | Malayalam | ml | 1 |
 | Austronesian, Polynesian | Latin (period orthography, unmacronised) | haw, mi | 5 |
 | Constructed, auxiliary | Latin (with diacritics) | eo, vo, io | 4 |
 
@@ -166,6 +173,7 @@ Every book in this repo came from one of these upstream sources:
 | [sagadb.org](https://sagadb.org) | Icelandic medieval prose |
 | [Internet Archive](https://archive.org) | Items unavailable through curated archives (Cherokee, Yoruba, Irish, Scots Gaelic, Mexican Spanish, Volapük, Ido, Esperanto first editions) |
 | [africanpoems.net](https://africanpoems.net) | Mwana Kupona's 1858 Swahili didactic poem |
+| [Old Tibetan Documents Online](https://otdo.aa-ken.jp) | The *Old Tibetan Chronicle*, transcribed from the Dunhuang manuscript |
 
 Each source has its own conventions (wikitext templates, Aozora's ruby annotations, Internet Archive's DjVu OCR, Ganjoor's per-poem API). The conversion scripts in `scripts/` know how to handle them. To add a new book:
 
@@ -180,7 +188,7 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
 
 1. **Every work is unambiguously in the US public domain, and the edition it was transcribed from is named.** These are two separate questions and the corpus answers both.
 
-   The *work* is public domain. Normally that follows from pre-1929 publication. One narrow documented class also qualifies: works transmitted in manuscript whose author died before 1855, where the US unpublished-works term (life plus 70 years) expired in the 19th century. Any such file states this basis in its own `source_note`. Currently one book uses it, the ko court memoir 한중록, first printed 1939.
+   The *work* is public domain. Normally that follows from pre-1929 publication. One narrow documented class also qualifies: works transmitted in manuscript whose author died before 1855, where the US unpublished-works term (life plus 70 years) expired in the 19th century. Any such file states this basis in its own `source_note`. Currently two books use it: the ko court memoir 한중록, first printed 1939, and the bo *Old Tibetan Chronicle*, a Dunhuang scroll of the ninth or tenth century first printed in 1940.
 
    The *transmission base*, meaning the edition a transcription was actually made from, is pre-1929 for all but a handful of books. Where a later edition is what reached the corpus, the `year_note` or `source_note` says which one and why. This matters because a modern editor's transcription can carry an editorial layer of its own even when the work beneath it is free. The current exceptions:
 
@@ -190,8 +198,11 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
    | `uk` Kotsiubynsky, *Тіні забутих предків* | 1912 | *Твори* vol. 2, Книгоспілка, New York, 1955 |
    | `mi` White, *Nga Kauhau Maori o Nehe* | 1887 | NZETC digitisation, 2001 to 2007 |
    | `sw` Mwana Kupona, *Utendi wa Mwana Kupona* | 1858 | Allen, *Tendi*, Heinemann, 1971 |
+| `te` Gurajada, *కన్యాశుల్కము* | 1909 | Kondapalli Veeravenkayya and Sons reprint, Rajahmundry, 1961 |
+| `or` Senapati, *ଛମାଣ ଆଠଗୁଣ୍ଠ* | 1902 | Srujanika and NIT Rourkela digital edition, 2013 |
+| `bo` *Old Tibetan Chronicle* | c. 900 (manuscript) | Old Tibetan Documents Online transcription, CC BY 4.0, revised in batches from 2018 to 2024 |
 
-   The first three reproduce an orthographic recension or a plain digitisation of a text that is itself free, which carries no practical restriction. The fourth is an edited scholarly transcription, is the only book in the corpus where an editorial layer may genuinely subsist, and is flagged in [QUALITY.md](QUALITY.md) for re-sourcing from Alice Werner's 1917 edition.
+   The `pl`, `uk`, `mi`, `te` and `or` books reproduce an orthographic recension, a reprint or a plain digitisation of a text that is itself free, which carries no practical restriction. Two are scholarly transcriptions in which an editorial layer may genuinely subsist. The `sw` book is an edited transcription and is flagged in [QUALITY.md](QUALITY.md) for re-sourcing from Alice Werner's 1917 edition. The `bo` book is a diplomatic reading of the manuscript published by its scholars under CC BY 4.0, which permits redistribution with attribution; the attribution is in the file, and the corpus's CC0 dedication does not reach that layer.
 2. **The selection is secular by default.** The sacred and liturgical texts of every religion are excluded alike, while folk tales, national epics, philosophical-skeptical works, and ethical wisdom literature are included as literary canon.
 3. **Each locale carries two or three books**, mixing size and genre where sources permit.
 4. **Canonical works are preferred over obscure ones.** Where the choice is between a niche author and a recognised one, the corpus leans canonical.
@@ -238,6 +249,7 @@ multilingual-classics-markdown/
 ├── audits/                # dated records of full-corpus review passes
 │   ├── README.md          # why they are kept and when a pass happens
 │   └── 2026-07-25.md
+├── sources/               # qualification records for upstream sources, per acquisition
 ├── CODE_OF_CONDUCT.md     # Ruby Code of Conduct
 ├── CITATION.cff           # academic citation metadata
 ├── LICENSE-CONTENT.md     # CC0 declaration for the book content
@@ -290,7 +302,7 @@ If this corpus contributes to your work, please cite it. The repository carries 
 
 ```
 Powell, S. multilingual-classics-markdown: Public-domain literary classics
-in 45 languages [Software]. GitHub. https://github.com/tideswellgroup/multilingual-classics-markdown
+in 53 languages [Software]. GitHub. https://github.com/tideswellgroup/multilingual-classics-markdown
 ```
 
 ## Acknowledgements
@@ -324,7 +336,7 @@ New locales, new books in existing locales, and improvements to the conversion s
 
 Contributions I would especially welcome:
 
-- **Locales not yet covered**: Telugu and other Dravidian languages beyond Tamil, further Slavic Latin variants beyond Polish and Czech, Mongolian, Inuktitut, Coptic, Ottoman Turkish (ota), more African languages beyond Swahili and Yoruba, and English variants with pre-1929 founding literatures (Ghana via Casely Hayford, the Philippines via Galang)
+- **Locales not yet covered**: Sinhala, Burmese, Khmer and Lao (investigated in October 2026 and left open for want of a qualifying text; see CORPUS.md), further Slavic Latin variants beyond Polish and Czech, Mongolian, Inuktitut, Coptic, Ottoman Turkish (ota), more African languages beyond Swahili and Yoruba, and English variants with pre-1929 founding literatures (Ghana via Casely Hayford, the Philippines via Galang)
 - **Two famous transcription gaps**: Anne Bradstreet's *The Tenth Muse* (1650) survives online only as black-letter page images, and Claude McKay's *Songs of Jamaica* (1912) is untranscribed; clean transcriptions of either would let the corpus carry them
 - **Better picks for locales carrying substitutions**: Premchand in Urdu (the corpus currently has Ghalib, Iqbal, and Mir Taqi Mir; I'd love a clean Premchand-Urdu source), Akinyele's *Iwe Itan Ibadan* if it ever surfaces in clean form, secular pre-1929 Amharic literature
 - **Conversion-script improvements** for sources handled clumsily today (OCR cleanup for IA djvu, better Wikisource ProofreadPage transclusion walking)

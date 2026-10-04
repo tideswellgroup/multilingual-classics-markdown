@@ -49,7 +49,7 @@ def fetch_html(lang: str, page: str, variant: str | None = None) -> str:
         params["variant"] = variant
     url = f"https://{lang}.wikisource.org/w/api.php?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={
-        "User-Agent": "multilingual-classics-markdown/1.0",
+        "User-Agent": "multilingual-classics-markdown/1.0 (contact@tideswellgroup.com)",
         "Accept-Language": variant or lang,
     })
     with urllib.request.urlopen(req, timeout=60) as r:

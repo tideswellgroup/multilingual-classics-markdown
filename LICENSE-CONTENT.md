@@ -8,7 +8,7 @@ To remove any residual ambiguity for downstream users, this repository releases 
 
 The dedication covers what this repository contributes: the selection and arrangement of the corpus, the frontmatter metadata, the markdown rendition of each text, and the accompanying notes. Those rights are waived to the maximum extent permitted by law. Anyone may copy, modify, distribute and perform them, even for commercial purposes, all without asking permission.
 
-The dedication cannot reach rights this repository does not hold, and does not claim to. Where a text reaches the corpus through a modern edited transcription, any editorial layer subsisting in that transcription belongs to its editor, not to this repository, and the affected book says so in its `source_note`. There is currently one such book, and it is listed in the README and tracked in QUALITY.md. Every other book is a rendition of a source edition that is itself out of copyright.
+The dedication cannot reach rights this repository does not hold, and does not claim to. Where a text reaches the corpus through a modern edited transcription, any editorial layer subsisting in that transcription belongs to its editor, not to this repository, and the affected book says so in its `source_note`. There are currently two such books, both listed in the README: the sw *Utendi wa Mwana Kupona*, tracked in QUALITY.md for re-sourcing, and the bo *Old Tibetan Chronicle*, whose transcription its editors at Old Tibetan Documents Online license under CC BY 4.0, so redistribution needs the attribution its file carries. Every other book is a rendition of a source edition that is itself out of copyright.
 
 Full legal text: [LICENSE](LICENSE), or <https://creativecommons.org/publicdomain/zero/1.0/legalcode>
 

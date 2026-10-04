@@ -4,7 +4,7 @@ Thanks for considering a contribution! This corpus exists because many people ma
 
 ## Wanted
 
-- **New locales not yet covered**: see the "Still missing" section in [CORPUS.md](CORPUS.md) for the current v1.2+ wishlist (Telugu, Mongolian, Inuktitut, Coptic, Ottoman Turkish, Tibetan, more African languages, etc.).
+- **New locales not yet covered**: see the "Still missing" section in [CORPUS.md](CORPUS.md) for the current v1.2+ wishlist (Sinhala, Burmese, Khmer, Lao, Mongolian, Inuktitut, Coptic, Ottoman Turkish, more African languages, etc.), and second books for the locales that so far have one.
 - **Better picks for locales that carry substitutions**: Premchand in Urdu (if you can find a clean digitised source), Akinyele's *Iwe Itan Ibadan* in Yoruba, secular pre-1929 Amharic literature.
 - **Quality-ledger items**: [QUALITY.md](QUALITY.md) lists every flagged book with the identified path to fixing it; several (the Bowen Yoruba proverbs re-transcription especially) are small, well-bounded tasks ideal for a first contribution.
 - **Native-reader audits**: if you read any of the corpus's languages fluently, auditing a book against its cited source is the most valuable contribution you can make. The method is described in [QUALITY.md](QUALITY.md) §How to audit a book.

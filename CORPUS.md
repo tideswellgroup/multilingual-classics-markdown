@@ -1,15 +1,15 @@
 # Corpus inventory
 
-Curated public-domain literary classics across 58 locales (47 beyond modern English, plus the historical and regional Englishes), with YAML frontmatter declaring source, year, license, and provenance. This corpus is intended as the non-English complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown).
+Curated public-domain literary classics across 66 locales (55 beyond modern English, plus the historical and regional Englishes), with YAML frontmatter declaring source, year, license, and provenance. This corpus is intended as the non-English complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown).
 
 ## Provenance
 
-The books came from eleven upstream sources, each with its own conventions:
+The books came from twelve upstream sources, each with its own conventions:
 
 | Source | Locales sourced from it |
 |---|---|
 | [Project Gutenberg](https://www.gutenberg.org) | de-DE, de-AT, es-ES, fr-FR, fr-CA (Conan), fi, is (sagadb relay), it, nl, sv, cs (Čapek), pt-PT, pt-BR, ru second, ang, sco, en-IE, en-CA, en-NZ, en-ZA, en-AU, en-IN, haw (both books, Distributed Proofreaders transcriptions; re-sourced 2026-07-24) |
-| Wikisource (per-language) | el (Papadiamantis stories), hi, ar, fa (Saadi), it, vi, th, cy, fi second, ru third, uk, zh-Hans, zh-Hant, ko, ur, he second, pl, bn, ta (Bharati), enm (Skeat text), en-GB (1609 Quarto), en-US (1855 Leaves), en-JM, la (Greenough text) |
+| Wikisource (per-language) | el (Papadiamantis stories), hi, ar, fa (Saadi), it, vi, th, cy, fi second, ru third, uk, zh-Hans, zh-Hant, ko, ur, he second, pl, bn, ta (Bharati), enm (Skeat text), en-GB (1609 Quarto), en-US (1855 Leaves), en-JM, la (Greenough text), mr, gu, pa, or, te, kn, ml |
 | [Aozora Bunko](https://www.aozora.gr.jp) | ja Akutagawa, ja Mori Ōgai, ja Sōseki, ja Terada (two science essays) |
 | [Project Ben-Yehuda](https://benyehuda.org) | he Brenner, he Bialik |
 | [Ganjoor.net](https://ganjoor.net) | fa Khayyam *Rubaiyat*, fa Hafez Ghazaliyat |
@@ -19,6 +19,7 @@ The books came from eleven upstream sources, each with its own conventions:
 | [Project Madurai](https://www.projectmadurai.org) | ta *Tirukkural*, ta *Kuṟuntokai* |
 | NZETC (Victoria University of Wellington), via Internet Archive Wayback Machine | mi Grey *Ko Nga Moteatea*, mi White *Nga Kauhau Maori o Nehe* (live host decommissioned; retrieval CDX-verified) |
 | [africanpoems.net](https://africanpoems.net) | sw Mwana Kupona |
+| [Old Tibetan Documents Online](https://otdo.aa-ken.jp) (ILCAA, Tokyo University of Foreign Studies) | bo *Old Tibetan Chronicle* (CC BY 4.0 transcription of the manuscript) |
 
 Each `.md` file's frontmatter records the precise source URL, the upstream repository, the original publication year, and a US public-domain license declaration.
 
@@ -36,7 +37,7 @@ Everything in this file records judgment calls rather than settled facts. Source
 
 ## Inventory
 
-137 markdown files across 58 locales. Sizes are approximate.
+145 markdown files across 66 locales. Sizes are approximate.
 
 ### Cluster A: Indo-European Romance
 
@@ -120,6 +121,10 @@ Everything in this file records judgment calls rather than settled facts. Source
 | bn | Rabindranath Tagore | *গীতাঞ্জলি* | 1913 | 164 KB |
 | bn | Sarat Chandra Chattopadhyay | *দেবদাস* | 1917 | 392 KB |
 | bn | Bankim Chandra Chattopadhyay | *কপালকুণ্ডলা* | 1870 | 395 KB |
+| mr | Hari Narayan Apte | *स्फुट गोष्टी भाग ४ था* | 1915 | 633 KB |
+| gu | Govardhanram Tripathi | *સરસ્વતીચંદ્ર, ભાગ ૧* | 1922 ed. (first 1887) | 1.58 MB |
+| pa | Shah Muhammad | *ਜੰਗਨਾਮਾ* | Lahore 1904 | 67 KB |
+| or | Fakir Mohan Senapati | *ଛମାଣ ଆଠଗୁଣ୍ଠ* | 1902 | 524 KB |
 | he | Yosef Haim Brenner | *מסביב לנקודה* | 1904 | 367 KB |
 | he | Hayim Nahman Bialik | *אריה בעל גוף* | 1898 | 132 KB |
 | he | Sholem Aleichem | *שושנה* | 1888 | 32 KB |
@@ -160,6 +165,7 @@ Everything in this file records judgment calls rather than settled facts. Source
 | ko | Heo Gyun | *홍길동전* 30-jang gyeongpan | early 19th c. ed. | 80 KB |
 | ko | Lady Hyegyong (헌경왕후) | *한중록* (권일, the 1795 recension) | 1795 | 74 KB |
 | ko | Yu Kilchun (유길준) | *서유견문* (서 + 제1편) | 1895 | 51 KB |
+| bo | Anonymous | *Old Tibetan Chronicle* (Pelliot tibétain 1287) | c. 900 (manuscript) | 139 KB |
 
 ### Cluster G: Austroasiatic + Kra-Dai
 
@@ -206,6 +212,9 @@ Everything in this file records judgment calls rather than settled facts. Source
 | ta | Thiruvalluvar | *திருக்குறள் / Tirukkuṟaḷ* | c. 500 | 237 KB |
 | ta | Subramania Bharati | *தேசிய கீதங்கள் / Tēciya Kītaṅkaḷ* | 1921 | 207 KB |
 | ta | Various poets | *குறுந்தொகை / Kuṟuntokai* | c. 300 | 236 KB |
+| te | Gurajada Apparao | *కన్యాశుల్కము / Kanyasulkamu* | 1909 | 760 KB |
+| kn | Panje Mangesha Rao | *ಕೋಟಿ ಚೆನ್ನಯ / Koti Chennaya* | 1924 | 217 KB |
+| ml | O. Chandu Menon | *ഇന്ദുലേഖ / Indulekha* | 1889 | 1.40 MB |
 
 ### Cluster L: Austronesian (Polynesian)
 
@@ -279,6 +288,15 @@ A handful of locales needed a different source or a different pick than original
 - **la** (*Aeneis*): the la.wikisource transcription names its edition as Greenough (Ginn, 1900) but does not reproduce Greenough's orthography. Two layers sit on top of it. Vowel-quantity macrons are carried throughout, which the print edition does not have; they come from The Latin Library, the route la.wikisource cites, whose Aeneid I is macronised and uses v. Its Books 2-12 are unmacronised and use v too, so the macronisation and the u-normalisation of Libri II-XII are both Wikisource's. The u/v convention is not uniform either: Liber I writes consonantal v (avena, venit) while Libri II-XII write u (renouare, uidi), so one file carries two conventions. Both layers are left exactly as transcribed. Normalising either one means deciding consonantal u from vocalic u word by word, which is an editorial act on the text and would be guesswork on my part. The inconsistency is flagged in QUALITY.md; a contributor who reads Latin could settle it. The bracketed line 10.872 and the Ille ego pre-proem are edition questions rather than transcription ones and are explained in the book's source_note.
 - **el / grc** (Greek): the two are separate languages and separate locales here. Plato is Attic, so it sits under `grc`; Papadiamantis is modern Greek under `el`. Both texts are polytonic, which took choosing: most Greek digitisation of pre-1929 work converts to the monotonic system introduced in 1982, rewriting the accentuation of the original. The Papadiamantis converter refuses any story whose transcription carries no breathings, which is why the selection omits *Όνειρο στο κύμα*, available on el.wikisource only in monotonic form. *Το Μοιρολόγι της Φώκιας* is absent because el.wikisource does not carry it at all.
 - **am** (Amharic): **dropped from v1**. No pre-1929 PD Amharic literary text is digitised in clean form. Documented as an open gap rather than filled with a rule-breaking placeholder; clean secular sources are especially welcome.
+- **mr, gu, pa, or, te, kn, ml, bo** (the 2026-10-04 coverage push): one book each, chosen from candidates qualified in [sources/2026-10-04-coverage-push.md](sources/2026-10-04-coverage-push.md), which also records the picks passed over. Every text was checked to be real Unicode rather than a legacy font encoding, and several carried a systematic transcription fault that is repaired as a counted class and disclosed in the book's source_note: Gujarati digits typed for the letters they resemble, an Odia conjunct mis-mapped from the edition's legacy font, Malayalam old-font digit letters, and a Kannada digit for the anusvara. Per locale:
+  - **mr**: the canonical pre-1929 Marathi novels (Hari Narayan Apte's among them) have no scan-backed transcription today, so the pick is Apte's own miscellany *Sphut Goshti* Part 4 (1915), proofread once and not yet validated. T. N. Atre's *Gaon-Gada* (1915) is the candidate for a second book once its last six pages are proofread.
+  - **gu**: Part 1 of *Sarasvatichandra* only, from the 1922 eighth edition; two religious front pages are left out.
+  - **pa**: Waris Shah's *Heer*, the obvious pick, is transcribed only from an undated edition that advertises interpolations, so the pick is Shah Muhammad's *Jangnama*, a secular war ballad, from a dated 1904 Lahore printing. The wiki's main page of that name is a different modern text; the book is built from the scan's own pages.
+  - **or**: the transcription follows a 2013 digital edition that names no base printing (listed in the README's transmission-base table).
+  - **te**: *Kanyasulkamu* in Gurajada's 1909 recast text, transcribed from a 1961 reprint (also in that table).
+  - **kn**: *Koti Chennaya* retells a Tulu legend whose heroes are venerated at shrines; it is admitted as folk epic, and the adjacency is disclosed in the file.
+  - **ml**: *Indulekha* is a typed transcription with no scan and no named edition, admitted under the rule for modern works; at 1.4 MB it is one of the corpus's two largest files.
+  - **bo**: the scroll was first printed in 1940, so the book is the corpus's second use of the manuscript-works exception, and its transcription carries a CC BY 4.0 scholarly layer from OTDO (see the README).
 
 ## Text-quality tiers
 
@@ -319,7 +337,12 @@ All conversion happens via scripts under `scripts/`:
 | `convert-madurai.py` | Project Madurai etext, Tirukkural structure | ta *Tirukkural* |
 | `convert-madurai-anthology.py` | Project Madurai Sangam anthology layout | ta *Kuṟuntokai* |
 | `convert-bharati.py` | Wrapper over the collection walker for ta.wikisource poetry sub-pages | ta Bharati |
-| `convert-bn-proofread.py` | bn.wikisource ProofreadPage sub-page walker | bn (all three) |
+| `convert-bn-proofread.py` | ProofreadPage sub-page walker for any Wikisource (named for its first use): explicit unit order, printed-head headings, `<br>` as hard breaks, counted digit-for-letter repairs, a response cache | bn (all three), te, ml, mr |
+| `convert-koti-chennaya.py` | Wrapper over the walker: signature marks, letter-spaced part heads, attested line-end joins | kn |
+| `convert-sarasvatichandra.py` | Wrapper over the walker: footnotes to Markdown footnotes, counted glyph-slip classes, chapter-overlap check | gu |
+| `convert-chha-mana-atha-guntha.py` | Wrapper over the walker: two-line chapter heads, the ṇḍa conjunct repair | or |
+| `convert-jangnama.py` | pa.wikisource Page-namespace assembly; verse lines rebuilt from danda marks and checked by stanza number and signature; scan-verified corrections | pa |
+| `convert-otdo.py` | Old Tibetan Documents Online: Tibetan-script rendering checked line by line against the Wylie master | bo |
 | `convert-hawaiian-bilingual.py` | IA bilingual-edition language separation (consonant-ratio scoring) | haw (superseded 2026-07-24 by the Gutenberg re-source) |
 | `convert-haw-gutenberg.py` | PG plain text, Hawaiian-section slicing (Laieikawai MOKUNA X heading restored by English-chapter alignment; Umi genealogy set as a table) | haw (both) |
 | `convert-steere-wikisource.py` | Multilingual-Wikisource ProofreadPage walk over the 22 secular pieces in printed order (reuses the uk walker) | sw Steere |
@@ -354,9 +377,9 @@ Each script accepts `--help` for invocation details. All write the YAML-frontmat
 The corpus covers:
 
 **Language families**:
-- Indo-European: Germanic (de-DE, de-AT, nl, sv, no, sco, English: en-GB, en-US, en-IE, en-CA, en-NZ, en-ZA, en-AU, en-IN, en-JM, plus the historical stages ang and enm), Romance (es-ES, es-MX, fr, it, pt-PT, pt-BR), Slavic (ru, uk, pl, cs), Indo-Iranian (hi, bn, fa, ur), Celtic (cy, ga, gd), Hellenic (grc, el), Italic (la), Old Norse (is)
+- Indo-European: Germanic (de-DE, de-AT, nl, sv, no, sco, English: en-GB, en-US, en-IE, en-CA, en-NZ, en-ZA, en-AU, en-IN, en-JM, plus the historical stages ang and enm), Romance (es-ES, es-MX, fr, it, pt-PT, pt-BR), Slavic (ru, uk, pl, cs), Indo-Iranian (hi, mr, bn, gu, pa, or, fa, ur), Celtic (cy, ga, gd), Hellenic (grc, el), Italic (la), Old Norse (is)
 - Afro-Asiatic: Semitic (he, ar)
-- Sino-Tibetan: Sinitic (zh-Hans, zh-Hant)
+- Sino-Tibetan: Sinitic (zh-Hans, zh-Hant), Tibetic (bo)
 - Japonic: Japanese (ja)
 - Koreanic: Korean (ko)
 - Austroasiatic: Vietnamese (vi)
@@ -365,7 +388,7 @@ The corpus covers:
 - Iroquoian: Cherokee (chr)
 - Uralic: Finnic (fi)
 - Turkic: Turkish (tr)
-- Dravidian: Tamil (ta)
+- Dravidian: Tamil (ta), Telugu (te), Kannada (kn), Malayalam (ml)
 - Austronesian: Polynesian (haw, mi)
 
 **Script systems**:
@@ -374,20 +397,28 @@ The corpus covers:
 - Ancient Greek (grc), Modern Greek (el)
 - Hebrew (he)
 - Arabic + Perso-Arabic (ar, fa, ur)
-- Devanagari (hi)
+- Devanagari (hi, mr)
 - CJK (Han / kana / Hangul: zh-Hans, zh-Hant, ja, ko)
 - Thai abugida (th)
 - Cherokee syllabary (chr, U+13A0-U+13FF + U+AB70-U+ABBF)
 - Tamil script (ta)
 - Bengali script (bn)
+- Gurmukhi (pa)
+- Gujarati script (gu)
+- Odia script (or)
+- Telugu script (te)
+- Kannada script (kn)
+- Malayalam script (ml)
+- Tibetan script (bo)
 
 **Documented gaps** (locales considered and deliberately left open rather than force-filled; the Amharic pattern):
 
 - **tr** (Turkish): the 1928 alphabet reform means pre-1929 public-domain Turkish in modern Latin orthography barely exists; the pre-reform literature is Ottoman Turkish in Arabic script, which would be its own locale (ota) and a worthwhile future addition on its own terms.
 - **mn** (Mongolian): the pre-1929 corpus is classical Mongolian in the traditional vertical script; clean digitised secular sources are scarce (Mongolian Wikisource has no full subdomain), and vertical layout raises rendering questions markdown tooling does not answer today. Further facts recorded 2026-07-16: macOS ships no Mongolian-script font (a free remedy exists: Noto Sans Mongolian, SIL OFL, installable or bundleable); Mongolian is vertical-lr, a distinct writing mode from the CJK vertical-rl that vertical-capable renderers implement first; and the digitised classical-script texts that do exist (the Ritsumeikan/National University of Mongolia TEI edition of the Altan Tobchi, and the TMSDL digital library's chronicles) are research prototypes with no stated license, which fails this corpus's provenance bar. The most promising path is asking those scholars to release one chronicle under an open license; a contributor with the connections is warmly invited.
+- **si** (Sinhala), **my** (Burmese), **km** (Khmer), **lo** (Lao): investigated 2026-10-04 and left open; the qualification record is in [sources/2026-10-04-coverage-push.md](sources/2026-10-04-coverage-push.md). In brief: the clean Unicode Sinhala texts found are either religious, of unknown rights, corrupted by a legacy-font conversion, or uncorrected OCR, and the one that passes the rules on paper is a short children's conduct poem dated only by a wiki header; the best Burmese candidate, U Ya's *Twelve-Season Luta* (printed 1907), reaches the web only as a modern collation of four witnesses by an unnamed editor, which fails the named-edition rule; the Khmer candidates were either first printed after 1929 by an author who died in 1936 or survive only as scans; and almost nothing was printed in Lao before 1929.
 - **iu** (Inuktitut), **cop** (Coptic): the pre-1929 digitised corpora are overwhelmingly missionary Bible translation and liturgical material, which the secular rule excludes; the Cherokee Constitution precedent shows a substantive secular find can reopen either.
 
-**Still missing for v1.2+**: a transcription of Anne Bradstreet's *The Tenth Muse* (1650; only black-letter page images survive online, and the corpus dropped the pick rather than ship modern spelling), Claude McKay's *Songs of Jamaica* (1912; untranscribed anywhere clean), English-variant locales per the stop rule below (named candidates: en-GH via Casely Hayford's *Ethiopia Unbound* 1911, en-PH via Galang's *A Child of Sorrow* 1921), Tibetan (a new script system with strong secular candidates: the Gesar folk epic and the songs of Tsangyang Gyatso, both with pre-1929 woodblock fixations; macOS ships the Kailasa face, so rendering is ready), Telugu and other Dravidian languages beyond Tamil, more Slavic Latin variants beyond Polish and Czech, classical literary Turkic (Chagatai, and Kazakh's Arabic-script Abai editions of 1909) to complement the post-reform Turkish here (see the tr caveat above), Mongolic, more Indigenous American (Cree, Inuktitut), Coptic, Ottoman Turkish (ota), Hiiakaikapoliopele in Hawaiian (the 1905-06 serial lives in the nupepa/ulukau newspaper archives, not Internet Archive; a contributor with access could bring the great Hiiaka epic here).
+**Still missing for v1.2+**: a transcription of Anne Bradstreet's *The Tenth Muse* (1650; only black-letter page images survive online, and the corpus dropped the pick rather than ship modern spelling), Claude McKay's *Songs of Jamaica* (1912; untranscribed anywhere clean), English-variant locales per the stop rule below (named candidates: en-GH via Casely Hayford's *Ethiopia Unbound* 1911, en-PH via Galang's *A Child of Sorrow* 1921), a second Tibetan book (the Gesar folk epic, the songs of Tsangyang Gyatso, and Sakya Pandita's *Treasury of Aphoristic Jewels* all have pre-1929 woodblock fixations, but none has a clean, openly licensed Unicode transcription yet), the four South and Southeast Asian scripts the 2026-10 coverage push could not fill (si, my, km, lo; see the documented gaps above), second and third books for the eight locales that push added, more Slavic Latin variants beyond Polish and Czech, classical literary Turkic (Chagatai, and Kazakh's Arabic-script Abai editions of 1909) to complement the post-reform Turkish here (see the tr caveat above), Mongolic, more Indigenous American (Cree, Inuktitut), Coptic, Ottoman Turkish (ota), Hiiakaikapoliopele in Hawaiian (the 1905-06 serial lives in the nupepa/ulukau newspaper archives, not Internet Archive; a contributor with access could bring the great Hiiaka epic here).
 
 **English-variant stop rule**: an English-variant locale enters when a pre-1929 literature genuinely exists there and the entry is founding-canon or orthographically distinct; territories whose anglophone literatures bloomed later (Singapore, Nigeria, Kenya) are not gaps, their literatures simply post-date the corpus's line.
 
