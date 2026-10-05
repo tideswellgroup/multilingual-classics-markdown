@@ -28,7 +28,7 @@ Compared line by line, 153 of 157 converted lines are identical to hieropy's; th
 
 **Rendering.** HarfBuzz (Chrome, Firefox, most Linux applications) and CoreText (Safari) lay out the format controls correctly with NewGardiner or Egyptian Text, both under the SIL Open Font License; only NewGardiner covers every sign in this spell, including the Extended-A block. The Noto font bundled with macOS 15 shows the signs unstacked and the controls as boxes. Windows was not tested.
 
-**Pending.** A request to Mark-Jan Nederhof for a CC BY licence on his Ahmose encoding (sent by the maintainer). If granted, Ahmose, a secular autobiography carved in hieroglyphs and based on Sethe's 1927 edition, becomes the second egy book.
+**Pending.** A request to Mark-Jan Nederhof for a CC BY licence on his Ahmose encoding, sent by the maintainer on 2026-10-05. If granted, Ahmose, a secular autobiography carved in hieroglyphs and based on Sethe's 1927 edition, becomes the second egy book.
 
 ## Sumerian (`sux`), script `Xsux`
 
@@ -41,4 +41,4 @@ Compared line by line, 153 of 157 converted lines are identical to hieropy's; th
 | SumTablets (Hugging Face) | ORACC | claims CC BY over share-alike material | | Reference |
 | CC0 Sumerian King List dataset | built on ETCSL | | | Reject |
 
-ORACC's licensing page (https://oracc.museum.upenn.edu/doc/about/licensing/) says its conditions may be waived; a request to osc@oracc.org to waive the share-alike condition for Q000377 was drafted for the maintainer to send. Rendering is not an obstacle: macOS ships Noto Sans Cuneiform and falls back to it, Windows has Segoe UI Historic, and cuneiform needs no complex shaping. Three signs in the ORACC text are private-use code points that would be replaced and disclosed; 63 signs are editorial restorations that would stay marked.
+ORACC's licensing page (https://oracc.museum.upenn.edu/doc/about/licensing/) says its conditions may be waived; the maintainer asked osc@oracc.org on 2026-10-05 to waive the share-alike condition for Q000377. Rendering is not an obstacle: macOS ships Noto Sans Cuneiform and falls back to it, Windows has Segoe UI Historic, and cuneiform needs no complex shaping. Three signs in the ORACC text are private-use code points that would be replaced and disclosed; 63 signs are editorial restorations that would stay marked.
