@@ -15,7 +15,7 @@ delivering the languages, the historical Englishes (Old English, Middle English,
 | **Books** | 146 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
 | **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Egyptian hieroglyphs, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
 | **License** | Content: CC0 (where public-domain content needs a license at all). Tooling: MIT |
-| **Fidelity** | Faithful renditions of named source editions, not critical editions. See [Scholarly use and limitations](#scholarly-use-and-limitations) before citing |
+| **Fidelity** | Faithful renditions of named source editions, not critical editions. See [Academic use](#academic-use) before citing |
 | **Provenance** | Every book carries source URL, original publication year, and license posture in YAML frontmatter |
 | **Machine-readable** | `manifest.json` indexes every book, validated in CI against `manifest.schema.json`; `croissant.json` describes the corpus in the [MLCommons Croissant](https://mlcommons.org/working-groups/data/croissant/) format |
 | **Verification** | `scripts/lint-corpus.py` checks 14 classes of rendering-risk patterns; 0 errors at last release |
@@ -24,7 +24,7 @@ delivering the languages, the historical Englishes (Old English, Middle English,
 ### Choose your path
 
 - **Ingesting this into something?** Start with [`manifest.json`](manifest.json) and its [schema](manifest.schema.json), then [FRONTMATTER.md](FRONTMATTER.md) for what each field means. [`croissant.json`](croissant.json) carries the same description in MLCommons Croissant form.
-- **Thinking of citing it?** Read [Scholarly use and limitations](#scholarly-use-and-limitations) first, then [CITATION.cff](CITATION.cff). Known defects are listed openly in [QUALITY.md](QUALITY.md).
+- **Thinking of citing it?** Read [Academic use](#academic-use) first, then [CITATION.cff](CITATION.cff). Known defects are listed openly in [QUALITY.md](QUALITY.md).
 - **Just want to look around?** The [coverage matrix](#coverage-matrix) is the map. Good places to start: the [Cherokee Constitution](books/chr), a [vertical-writing Japanese story](books/ja), or [Beowulf in Old English](books/ang).
 
 ## Why?
@@ -216,30 +216,32 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
    The field marks admission by this exception, not religious themes. Devotional lyric (Gitanjali, Hafez), mythology (the Mabinogi), folk legend sung at shrines (*Koti Chennaya*) and the ritual pieces within collected oral literature (the karakia in *Ko Nga Moteatea*) are literature admitted under the normal rule and carry no flag. One book uses the exception so far: the `egy` Book of the Dead, spell 17, by the recovered-text route.
 3. **Each locale carries two or three books**, mixing size and genre where sources permit.
 4. **Canonical works are preferred over obscure ones.** Where the choice is between a niche author and a recognised one, the corpus leans canonical.
-5. **Reference works are accepted as locale-fillers** only when literary prose is not digitised in clean form. This currently applies to yo and chr, where the pre-1929 corpus is overwhelmingly missionary-religious in nature. Both locales have secular texts, so the sacred-text exception in principle 2 does not apply to them.
+5. **Reference works are accepted** only when literary prose is not digitised in clean form. This currently applies to yo and chr, where the pre-1929 corpus is overwhelmingly missionary-religious in nature. Both locales have secular texts, so the sacred-text exception in principle 2 does not apply to them.
 
 Every substitution from the originally-planned picks is documented in [CORPUS.md](CORPUS.md) for transparency.
 
-## Scholarly use and limitations
+## Academic use
 
-This is a convenience corpus rather than a collection of critical editions. Before citing it in scholarship, it is worth understanding what it is and what it is not:
+This is a convenience corpus rather than a collection of critical editions. Before citing it in scholarship, you should know that:
 
-- **Texts come from volunteer digitisation projects** (Wikisource, Project Gutenberg, Internet Archive OCR, and the archives credited below) and inherit those projects' transcription errors. OCR-sourced files carry documented noise; see per-file `source_note` fields and the caveats in [CORPUS.md](CORPUS.md). No text here has been collated against manuscripts or authoritative print editions.
-- **Curation involved judgment calls**: which works count as canon, which edition to take, where to excerpt, how to attribute works with complex authorship. CORPUS.md records each locale's choices, substitutions, and known weaknesses. The calls were made to the best of one maintainer's ability and every one of them is open to debate.
+- **Texts come from volunteer digitisation projects** (Wikisource, Project Gutenberg, Internet Archive OCR, and the archives credited below) and inherit those projects' transcription errors. OCR-sourced files carry documented noise; see per-file `source_note` fields and the caveats in [CORPUS.md](CORPUS.md). No text has been systematically collated against manuscripts or print editions; spot readings against page images are recorded in the notes.
+- **Curation involved judgment calls**: which works count as canon, which edition to take, where to excerpt, how to attribute works with complex authorship. CORPUS.md records each locale's choices, substitutions, and known weaknesses.
+- **AI models were used in building the corpus.** They helped find sources, convert the texts and repair errors, under my direction and on my responsibility. Changes beyond the repair of transcription slips are recorded in each book's `source_note`, and texts have not been modernised or normalised except where noted. Most texts haven't been checked in this corpus by someone who reads the language. [CORPUS.md](CORPUS.md) §How the texts were made describes the method.
 - **Attribution of collected oral literature is hard.** Several works passed through colonial-era editors whose names appear on title pages while the source authors and informants went uncredited. Where scholarship identifies those authors, the frontmatter credits them, and these texts remain the cultural heritage of the communities they come from.
 - **Year fields follow the cited source edition**, with `year_note` carrying nuance (manuscript versus print date, serial publication, composite works).
-- **Corrections and new perspectives are welcome**, especially from native speakers and subject specialists. Open an issue with the content-correction template or send a PR. Disagreement about a pick, an attribution, or an edition is useful information.
 
-### What would make it citable
+Corrections and new perspectives are welcome, especially from native speakers and subject specialists. Open an issue with the content-correction template or send a PR. I'd like to hear disagreement about a pick, an attribution or an edition.
 
-The limitations above describe where the corpus stands, not where it has to stay. Four things separate it from something a scholar could cite without reservation, and they are listed roughly in order of cost:
+### What's still needed
 
-1. **An archival deposit with a persistent identifier.** A DOI against an archived snapshot, so a citation resolves to fixed bytes rather than to a moving branch. This is the cheapest item on the list and the one that matters most.
-2. **Stable per-book identifiers.** Paths are currently the identity of a book, so a re-attribution that moves a file breaks any citation to it, even though renames land in dedicated commits precisely so they can be traced. An immutable `uid` in the frontmatter would fix that permanently.
-3. **A stated editorial method.** A written account of how conversions were made, what was checked by a human and what by a script, and who verified which languages. Parts of this are already scattered through CORPUS.md and QUALITY.md; it wants collecting in one place.
-4. **Structural encoding.** Verse lines, speaker attribution, page breaks and an apparatus, which in practice means TEI rather than Markdown. This is a different project with a different cost, and there is no plan to do it. Anyone who needs textual apparatus should go to the source editions instead.
+Four things would make this corpus easier to cite:
 
-The first three are achievable and intended. The fourth is honestly out of scope, and the corpus would rather say so than imply otherwise.
+1. **An archival deposit with a persistent identifier.** A DOI for an archived snapshot would let a citation point to a fixed version of the corpus rather than one that keeps changing. This is planned for the first public release.
+2. **Stable per-book identifiers.** A book is currently identified by its path, so moving a file, for example after a re-attribution, breaks any citation to it. A fixed `uid` in each book's frontmatter would solve that.
+3. **A stated editorial method.** [CORPUS.md](CORPUS.md) describes how the texts were made, including the use of AI models. It doesn't yet record, for each book, how it was checked and whether someone who reads its language has seen it.
+4. **Structural encoding.** Verse lines, speakers, page breaks and a critical apparatus would need TEI rather than Markdown. That's a different project, and I don't plan to take it on.
+
+I intend to do the first three.
 
 ## Repository layout
 
@@ -328,8 +330,14 @@ This repo would not be possible without the work of the hundreds of people who t
 - **Internet Archive** and Google Books for scanning items unavailable elsewhere
 - **Project Madurai** volunteers for the Tamil literary etexts
 - **NZETC** (Victoria University of Wellington) for the Maori transcriptions, reached through the Internet Archive Wayback Machine after the live host was decommissioned
+- **africanpoems.net** for the text of Mwana Kupona's *Utendi*
+- **Old Tibetan Documents Online** (ILCAA, Tokyo University of Foreign Studies) for the transcription of the *Old Tibetan Chronicle*, under CC BY 4.0
+- **Raymond Monfort** for the transcription of the Book of the Dead, spell 17, published in **Serge Rosmorduc**'s MDC-texts, under CC BY
+- **Srujanika** and the **National Institute of Technology, Rourkela**, for the Odia digital edition of *Chha Mana Atha Guntha*
 - **Matt Schmitt** for `classic-books-markdown`, which motivated and informed this work
 - The countless authors, editors, and translators whose work is in these files
+
+The corpus was built with the help of AI models: Claude (Anthropic), Gemini (Google), ChatGPT (OpenAI) and Mistral (Mistral AI).
 
 ## License
 
@@ -346,6 +354,7 @@ New locales, new books in existing locales, and improvements to the conversion s
 
 Contributions I would especially welcome:
 
+- **Checking a book against its source, if you read its language.** Most books have only been checked by scripts and AI models. [QUALITY.md](QUALITY.md) lists the books where this is most needed and how to go about it.
 - **Locales not yet covered**: Sinhala, Burmese, Khmer and Lao (investigated in October 2026 and left open for want of a qualifying text; see CORPUS.md), further Slavic Latin variants beyond Polish and Czech, Mongolian, Inuktitut, Coptic, Ottoman Turkish (ota), more African languages beyond Swahili and Yoruba, and English variants with pre-1929 founding literatures (Ghana via Casely Hayford, the Philippines via Galang)
 - **Two famous transcription gaps**: Anne Bradstreet's *The Tenth Muse* (1650) survives online only as black-letter page images, and Claude McKay's *Songs of Jamaica* (1912) is untranscribed; clean transcriptions of either would let the corpus carry them
 - **Better picks for locales carrying substitutions**: Premchand in Urdu (the corpus currently has Ghalib, Iqbal, and Mir Taqi Mir; I'd love a clean Premchand-Urdu source), Akinyele's *Iwe Itan Ibadan* if it ever surfaces in clean form, secular pre-1929 Amharic literature

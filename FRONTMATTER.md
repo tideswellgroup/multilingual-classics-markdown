@@ -6,7 +6,7 @@ Books in this corpus open with a YAML frontmatter block between `---` fences. Th
 
 The frontmatter does three jobs, in priority order:
 
-1. **Provenance**: every book carries its source URL, edition dates, and license posture, machine-readably. This is the backbone of the corpus's scholarly-use commitments (see README §Scholarly use and limitations).
+1. **Provenance**: every book carries its source URL, edition dates, and license posture, machine-readably. This is what the corpus's academic-use commitments rest on (see README §Academic use).
 2. **Curation transparency**: excerpts, substitutions, disclosed corrections, and orthography caveats live in the file they describe, and in CORPUS.md.
 3. **Presentation hints**: a small, principled set of fields that record typographic conventions a renderer may honour.
 

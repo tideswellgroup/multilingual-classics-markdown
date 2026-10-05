@@ -130,7 +130,7 @@ The five principles from the README, in short form:
 2. The selection is secular by default; the sacred texts of every religion are excluded alike, apart from a narrow, flagged exception for recovered texts and for scripts with no other witness.
 3. Each locale carries two or three books, varied in size, genre, and period.
 4. Canonical works are preferred over obscure ones.
-5. Reference works are accepted only as locale-fillers where literary prose is not digitised.
+5. Reference works are accepted only where literary prose is not digitised.
 
 ## Code style for conversion scripts
 

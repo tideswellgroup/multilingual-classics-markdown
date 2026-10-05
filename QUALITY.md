@@ -11,12 +11,12 @@ This file is the single place where the corpus's known defects, open re-sourcing
 | Verse hard-break detection | `scripts/check-verse-breaks.py` | Contributor-run; flags are leads that need human judgment |
 | Upstream fidelity audit (Wikisource books) | `scripts/verify-upstream.py` | Contributor-run per book |
 | Full structural render audit | An external renderer, outside this repository | Maintainer, at merge |
-| Full-corpus critical read | Native-reader audit passes | Periodic; last: 2026-07-20 |
+| Full-corpus reading pass | A language model, with results recorded in audits/ | Periodic; last: 2026-07-25 |
 | Documented-counts consistency | `scripts/check-doc-counts.py` | CI, every push and PR |
 
 ## How to audit a book
 
-The mechanical gates above catch structure; they cannot catch a wrong word. That takes a reader, and it is the most valuable contribution a fluent speaker can make here. The method below was distilled from the 2026-07 full-corpus audit wave that repaired more than sixty books:
+The mechanical gates above catch problems of structure but not wrong words. Checking for those needs a human reader, which is the most valuable contribution a fluent speaker can make here. The method below was distilled from the 2026-07 full-corpus audit wave that repaired more than sixty books:
 
 1. **Read the file next to its source.** Open the book's `source_url` (for scan-backed sources, the page images) beside the markdown. You are comparing against the cited edition, not against the text you know from school: many books here deliberately preserve historical orthography.
 2. **Know the defect classes.** Nearly everything the audit waves found falls into seven bins: duplicated or dropped passages (conversion seams, page boundaries); mis-encoded characters (mojibake, OCR confusions like cl/el or rn/m, lost diacritics); lost structure (missing chapter headings, flattened section numbers); soft-wrapped verse rendering as prose (run `scripts/check-verse-breaks.py`); transcriber or OCR debris (page numbers, running heads, apparatus) left in the text; silent modernization (orthography that does not match the cited edition); and wrong attribution or edition metadata in the frontmatter.

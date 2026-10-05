@@ -33,3 +33,7 @@ If you're proposing a correction, please cite where the correct reading comes fr
 - [ ] Readability (the passage is recognisable but flawed)
 - [ ] Substantive (changes meaning of the passage)
 - [ ] Blocking (the file fails to render)
+
+## Credit
+
+If the correction is taken up, how would you like to be credited in the book's notes? Your name, a handle, or not at all.
