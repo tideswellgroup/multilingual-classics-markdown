@@ -1,6 +1,6 @@
 #!/bin/sh
-# rebuild-2026-10-books.sh: the exact commands that build the eight books
-# added on 2026-10-04 (mr, gu, pa, or, te, kn, ml, bo), so any of them can be
+# rebuild-2026-10-books.sh: the exact commands that build the nine books
+# added on 2026-10-04 (mr, gu, pa, or, te, kn, ml, bo, egy), so any of them can be
 # regenerated from its upstream. Each run reuses the book's own frontmatter,
 # which is curated by hand, and rewrites only the body.
 #
@@ -48,3 +48,13 @@ python3 scripts/convert-chha-mana-atha-guntha.py --frontmatter "$(book or)" --ou
 PA_CACHE=""; [ -n "$CACHE" ] && PA_CACHE="--cache $CACHE/pa-jangnama.json"
 python3 scripts/convert-jangnama.py --frontmatter "$(book pa)" --output "$(book pa)" $PA_CACHE
 python3 scripts/convert-otdo.py --frontmatter "$(book bo)" --output "$(book bo)" $C
+
+# egy: the Book of the Dead, spell 17, from MDC-texts. The .gly source is
+# fetched to the cache directory (or the temporary directory) first.
+# Pinned to the commit the book was built from, and checked by hash.
+GLY="${CACHE:-${TMPDIR:-/tmp}}/Book of the dead Chapter 17.gly"
+[ -f "$GLY" ] || curl -s -A "multilingual-classics-markdown/1.0 (contact@tideswellgroup.com)" -o "$GLY" \
+  "https://raw.githubusercontent.com/rosmord/MDC-texts/98bcf846a7/texts/Book%20of%20the%20dead%20Chapter%2017.gly"
+echo "7184c26acbf2e4ff20d5df40d520a7f65454cb25d988076fcfd3fea6b10ce6fa  $GLY" | shasum -a 256 -c - >/dev/null \
+  || { echo "the .gly source does not match the pinned hash" >&2; exit 1; }
+python3 scripts/convert-mdc-hieroglyphs.py --source "$GLY" --frontmatter "$(book egy)" --output "$(book egy)"
