@@ -12,6 +12,24 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
+## wave-2026-10-05
+
+145 books in 66 locales, to 146 books in 67.
+
+### New locales (1)
+
+- **egy**: Anonymous, *Book of the Dead, spell 17 (Papyrus of Ani)*
+
+Ancient Egyptian arrives with spell 17 of the Book of the Dead as it stands in the Papyrus of Ani, in Unicode hieroglyphs. The text is Raymond Monfort's CC BY transcription of Budge's 1890 facsimile, which a new converter turns from JSesh's Manuel de Codage into Unicode, checked line by line against an independent converter. Ten signs with no Unicode mapping identified are written as their sign numbers in braces, and the rubrics' red ink isn't represented. Reading it needs a font such as NewGardiner.
+
+### Curation rules
+
+The secular rule now has a narrow exception, set out in the README's curation principle 2. A sacred text can be admitted if the work was lost and is known only from excavation, rediscovery or decipherment, or if it's the one standard text in a script the corpus can't otherwise carry. Books admitted this way carry a `sacred_text` field, and the linter checks that each one documents its route. The Book of the Dead is the first.
+
+### Method
+
+CORPUS.md now says how the texts were made, including the use of AI models, and that most texts haven't been checked in this corpus by someone who reads the language. The README's "Academic use" section, its contributing list and the Zenodo, Croissant and CITATION.cff descriptions say the same, and ask readers of these languages to check a book against its source.
+
 ## wave-2026-10-04
 
 137 books in 58 locales, to 145 books in 66.
