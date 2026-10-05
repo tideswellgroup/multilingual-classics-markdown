@@ -6,7 +6,9 @@ Catches the bug classes we hit during corpus conversion: math delimiter
 imbalance, broken \\right\\\\left. patterns from dropped braces, trailing
 punctuation after display-math $$, Wikisource license-template debris,
 orphan <math> HTML tags, residual wiki templates, missing or malformed
-YAML frontmatter.
+YAML frontmatter, and books admitted under the sacred-text exception that
+do not document their route (FM007, per file; FM008, one book per script
+across the corpus).
 
 Usage:
   scripts/lint-corpus.py <path>...           # report findings
@@ -130,7 +132,102 @@ def check_frontmatter(text: str, path: Path | None = None) -> list[Issue]:
             issues.append(Issue(
                 "error", lineno, "FM006",
                 f"{key} value {value!r} parses as a YAML boolean/null, not a string; quote it"))
+    issues.extend(check_sacred_text(fm))
     return issues
+
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SACRED_TEXT_ROUTES = ("recovered-text", "sole-witness")
+ISO_15924 = re.compile(r"\bISO 15924 ([A-Z][a-z]{3})\b")
+SOURCES_CITATION = re.compile(r"\bsources/([A-Za-z0-9._-]+\.md)\b")
+
+
+def _fm_value(fm: str, key: str) -> str | None:
+    m = re.search(rf"^{re.escape(key)}:[ \t]*(.*)$", fm, re.MULTILINE)
+    if not m:
+        return None
+    value = m.group(1).strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        value = value[1:-1]
+    return value
+
+
+def check_sacred_text(fm: str) -> list[Issue]:
+    """FM007: a book admitted under the sacred-text exception (README
+    curation principle 2) names its route in `sacred_text` and documents it
+    in a single-line `source_note`; a sole-witness book also names its
+    script's ISO 15924 code and cites a sources/ record that carries both
+    that code and the book's locale."""
+    route = _fm_value(fm, "sacred_text")
+    if route is None:
+        return []
+
+    def err(msg: str) -> Issue:
+        return Issue("error", 1, "FM007", msg)
+
+    if route not in SACRED_TEXT_ROUTES:
+        return [err(f"sacred_text value {route!r} is not one of {', '.join(SACRED_TEXT_ROUTES)}")]
+    note = _fm_value(fm, "source_note")
+    if note is None:
+        return [err("sacred_text is set but source_note is missing; it must name the route")]
+    if re.match(r"^[>|][-+0-9]*\s*(#.*)?$", note):
+        return [err("sacred_text books need source_note as a single quoted line, not a block scalar")]
+    issues = []
+    if route not in note:
+        issues.append(err(f"source_note does not cite the admission route {route!r}"))
+    if route == "sole-witness":
+        code = ISO_15924.search(note)
+        cite = SOURCES_CITATION.search(note)
+        if not code:
+            issues.append(err("sole-witness source_note must name the script as 'ISO 15924 Xxxx'"))
+        if not cite:
+            issues.append(err("sole-witness source_note must cite its qualification record under sources/"))
+        elif code:
+            record = REPO_ROOT / "sources" / cite.group(1)
+            if not record.is_file():
+                issues.append(err(f"cited record sources/{cite.group(1)} does not exist"))
+            else:
+                try:
+                    text = record.read_text(encoding="utf-8")
+                except UnicodeDecodeError:
+                    text = ""
+                locale = _fm_value(fm, "language") or ""
+                # Both in backticks, so a short tag such as `my` or a code such
+                # as `Copt` cannot be satisfied by an ordinary word in the prose.
+                if f"`{code.group(1)}`" not in text:
+                    issues.append(err(f"sources/{cite.group(1)} does not name script `{code.group(1)}`"))
+                if not locale or f"`{locale}`" not in text:
+                    issues.append(err(f"sources/{cite.group(1)} does not name locale `{locale}`"))
+    return issues
+
+
+def check_sole_witness_unique(books_root: Path) -> list[str]:
+    """FM008: the sole-witness route admits at most one book per script.
+    Scans every book in the corpus, whatever paths were linted."""
+    seen: dict[str, Path] = {}
+    problems = []
+    for path in sorted(books_root.rglob("*.md")):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue  # lint_file reports it as E001
+        if not text.startswith("---\n"):
+            continue
+        end = text.find("\n---\n", 4)
+        fm = text[4:end] if end != -1 else ""
+        if _fm_value(fm, "sacred_text") != "sole-witness":
+            continue
+        code = ISO_15924.search(_fm_value(fm, "source_note") or "")
+        if not code:
+            continue  # FM007 reports this per file
+        if code.group(1) in seen:
+            problems.append(
+                f"FM008 sole-witness script {code.group(1)} is claimed by both "
+                f"{seen[code.group(1)].relative_to(REPO_ROOT)} and {path.relative_to(REPO_ROOT)}"
+            )
+        else:
+            seen[code.group(1)] = path
+    return problems
 
 
 def check_math_left_right_balance(text: str, body_start: int) -> list[Issue]:
@@ -675,6 +772,11 @@ def main() -> int:
                     print(f"  [ERROR] line {issue.line}: {issue.code} {issue.message}")
                 for issue in warnings:
                     print(f"  [WARN]  line {issue.line}: {issue.code} {issue.message}")
+
+    corpus_problems = check_sole_witness_unique(REPO_ROOT / "books")
+    for problem in corpus_problems:
+        print(f"\n[ERROR] corpus: {problem}")
+    total_errors += len(corpus_problems)
 
     print(f"\n--- summary ---")
     print(f"files scanned: {len(files)}")

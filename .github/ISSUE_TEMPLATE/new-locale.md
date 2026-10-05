@@ -29,7 +29,7 @@ Please suggest 1-3 canonical pre-1929 public-domain books in this language. For 
 ## Curation principle check
 
 - [ ] Pre-1929 publication
-- [ ] Secular (not religious scripture)
+- [ ] Secular, or qualifying for the sacred-text exception (README curation principle 2)
 - [ ] Available under a public-domain or CC0-compatible license in the United States
 
 ## Coverage rationale

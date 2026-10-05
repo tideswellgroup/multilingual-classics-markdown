@@ -35,5 +35,5 @@ You don't need to write the converter to file this. Finding a clean pre-1929 tex
 ## Curation check
 
 - [ ] Published before 1929, or the documented manuscript exception applies
-- [ ] Not a sacred or liturgical text (see [CONTRIBUTING](../CONTRIBUTING.md))
+- [ ] Not a sacred or liturgical text, or qualifying for the sacred-text exception (see the README's curation principle 2)
 - [ ] Public domain in the United States

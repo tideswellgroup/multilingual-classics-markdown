@@ -177,6 +177,14 @@
           ],
           "description": "Present only on books known to fall short of the corpus's normal fidelity bar, so consumers can filter them out. noisy: machine OCR or otherwise unproofread, disclosed residual character noise, readable and structurally sound. alpha: known substantial problems, provisional, treat as a placeholder. Absent by default. Every book carrying this field has a matching open flag in QUALITY.md."
         },
+        "sacred_text": {
+          "type": "string",
+          "enum": [
+            "recovered-text",
+            "sole-witness"
+          ],
+          "description": "Present only on a sacred, liturgical or cult text admitted under the exception in README curation principle 2, naming its route. recovered-text: the work was lost and is known only from excavation, rediscovery or decipherment. sole-witness: the one standard text in a script the corpus cannot otherwise carry. Absent by default, meaning admitted under the normal secular rule; it marks admission, not religious themes."
+        },
         "writing-mode": {
           "type": "string",
           "enum": [

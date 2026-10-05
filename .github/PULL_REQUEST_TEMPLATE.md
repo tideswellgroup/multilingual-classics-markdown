@@ -25,4 +25,4 @@
 
 ## Caveats
 
-<!-- OCR noise, substitutions from a planned pick, religious adjacency, benign linter warnings, anything reviewers should know. -->
+<!-- OCR noise, substitutions from a planned pick, religious adjacency or admission under the sacred-text exception (name the route), benign linter warnings, anything reviewers should know. -->

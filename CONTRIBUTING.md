@@ -25,7 +25,7 @@ If you'd rather not use GitHub at all, contact@tideswellgroup.com reaches me.
 ## Not accepted
 
 - **Anything published 1929 or later**, with one exception: a work transmitted in manuscript whose author died before 1855 (the US unpublished-works term, life plus 70 years, expired in the 19th century) may qualify, and its file must state that basis in `source_note`. If you are invoking the exception, say so in the PR; everything else is strictly pre-1929 to stay unambiguously in the US public domain.
-- **Sacred and liturgical texts of any religion.** This selection is secular, for two reasons: deciding on which texts to include is a decision that belongs inside a tradition rather than to a corpus like this, and because they're the most digitised texts in most languages and would crowd out the literature this corpus exists to sample. Folk tales, national epics, philosophical works and ethical wisdom literature are welcomed.
+- **Sacred and liturgical texts of any religion.** This selection is secular, for two reasons: deciding on which texts to include is a decision that belongs inside a tradition rather than to a corpus like this, and because they're the most digitised texts in most languages and would crowd out the literature this corpus exists to sample. Folk tales, national epics, philosophical works and ethical wisdom literature are welcomed. A narrow exception admits a text whose work was lost and recovered (Ancient Egyptian, Sumerian), or the one standard text in a script the corpus cannot otherwise carry; its conditions are in the README's curation principle 2, and a book admitted under it must carry the `sacred_text` field, and a book on the sole-witness route also needs its qualification record under `sources/`. If you are invoking the exception, say which route in the PR.
 - **Translations under copyright**. The translator's copyright is separate from the original author's. If the translation isn't pre-1929 too, find a different translation.
 - **Bulk dumps**. Each book is a curation decision. If you want to contribute 50 obscure works in one locale, open an issue first to discuss what serves the corpus's diversity goals best.
 
@@ -120,14 +120,14 @@ PR description should answer:
 - What did you add?
 - Why this book in particular?
 - What source did you use, and was the OCR / conversion clean?
-- Any caveats (substitutions from a planned pick, religious adjacency, OCR noise)?
+- Any caveats (substitutions from a planned pick, religious adjacency or admission under the sacred-text exception, OCR noise)?
 
 ## Curation principles (reminder)
 
 The five principles from the README, in short form:
 
 1. Every book is unambiguously in the US public domain: normally pre-1929 publication, with the narrow manuscript-works exception documented above.
-2. The selection is secular; the sacred texts of every religion are excluded alike.
+2. The selection is secular by default; the sacred texts of every religion are excluded alike, apart from a narrow, flagged exception for recovered texts and for scripts with no other witness.
 3. Each locale carries two or three books, varied in size, genre, and period.
 4. Canonical works are preferred over obscure ones.
 5. Reference works are accepted only as locale-fillers where literary prose is not digitised.
