@@ -312,7 +312,7 @@ If this corpus contributes to your work, please cite it. The repository carries 
 
 ```
 Powell, S. multilingual-classics-markdown: Public-domain literary classics
-in 54 languages [Software]. Zenodo. https://doi.org/10.5281/zenodo.23178146
+in 54 languages [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23178146
 ```
 
 That DOI always resolves to the latest release. Each release also has a DOI of its own, given on its Zenodo page, for citing one fixed version.
