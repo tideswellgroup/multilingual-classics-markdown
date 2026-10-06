@@ -1,7 +1,7 @@
 {
   "$schema": "./manifest.schema.json",
   "corpus": "multilingual-classics-markdown",
-  "bookCount": 145,
+  "bookCount": 144,
   "localeCount": 66,
   "locales": [
     "ang",
@@ -1394,25 +1394,6 @@
       "yearNumeric": 1924,
       "sizeBytes": 221865,
       "wordCount": 10207
-    },
-    {
-      "path": "books/ko/Anonymous/춘향가.md",
-      "locale": "ko",
-      "title": "춘향가",
-      "title_translit": "Chunhyangga",
-      "title_en": "The Song of Chunhyang",
-      "author": "Anonymous",
-      "language": "ko",
-      "year": "1850",
-      "year_note": "Anonymous pansori narrative transmitted orally; 1850 is a conventional placement for the recension used here, not a publication date.",
-      "source": "Wikisource (ko)",
-      "source_url": "https://ko.wikisource.org/wiki/%EC%B6%98%ED%96%A5%EA%B0%80",
-      "source_note": "The source transcription drops occasional hanja inside the gloss parentheses, leaving gaps (e.g. 銀葉 子); reproduced as transmitted.",
-      "license": "Public domain in the United States",
-      "writing-mode": "vertical-rl",
-      "yearNumeric": 1850,
-      "sizeBytes": 139466,
-      "wordCount": 13069
     },
     {
       "path": "books/ko/김소월/진달래꽃.md",

@@ -166,7 +166,7 @@
       "@type": "cr:RecordSet",
       "@id": "books_index",
       "name": "books_index",
-      "description": "One record per work, drawn from manifest.json. The 145 records cover 66 locales. Fields mirror the YAML frontmatter specified in FRONTMATTER.md.",
+      "description": "One record per work, drawn from manifest.json. The 144 records cover 66 locales. Fields mirror the YAML frontmatter specified in FRONTMATTER.md.",
       "key": {
         "@id": "books_index/path"
       },

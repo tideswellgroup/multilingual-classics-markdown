@@ -1,8 +1,8 @@
 # multilingual-classics-markdown
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23178146.svg)](https://doi.org/10.5281/zenodo.23178146) [![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 145](https://img.shields.io/badge/books-145-blue.svg)](CORPUS.md) [![Locales: 66](https://img.shields.io/badge/locales-66-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23178146.svg)](https://doi.org/10.5281/zenodo.23178146) [![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 144](https://img.shields.io/badge/books-144-blue.svg)](CORPUS.md) [![Locales: 66](https://img.shields.io/badge/locales-66-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
 
-> A curated corpus of public-domain literary classics in 53 languages across 66 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 145 books across 14 language families and 19 script systems.
+> A curated corpus of public-domain literary classics in 53 languages across 66 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 144 books across 14 language families and 19 script systems.
 
 This repo is intended as a complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown), 
 delivering the languages, the historical Englishes (Old English, Middle English, original-spelling Early Modern), and the regional English literatures that modern-spelling English corpora do not carry. It was built so that application developers, NLP researchers, language learners, and typography enthusiasts can drop a real-world multilingual corpus into their workflow as easily as possible. The en-US and modern-spelling en-GB canon, which mlschmitt's project already does well, are deliberately absent.
@@ -12,7 +12,7 @@ delivering the languages, the historical Englishes (Old English, Middle English,
 | | |
 |---|---|
 | **Languages** | 53 languages across 66 locales and 14 language families |
-| **Books** | 145 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
+| **Books** | 144 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
 | **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
 | **License** | Content: CC0 (where public-domain content needs a license at all). Tooling: MIT |
 | **Fidelity** | Faithful renditions of named source editions, not critical editions. See [Academic use](#academic-use) before citing |
@@ -93,7 +93,7 @@ If you'd like to know more about how these tags work, Wikipedia's [IETF language
 | Sino-Tibetan, Sinitic | Han (Traditional) | zh-Hant | 4 |
 | Sino-Tibetan, Tibetic | Tibetan (Old Tibetan orthography) | bo | 1 |
 | Japonic | Hiragana / Katakana / Han | ja | 5 |
-| Koreanic | Hangul (incl. old-hangul and mixed Hanja-Hangul) | ko | 5 |
+| Koreanic | Hangul (incl. old-hangul and mixed Hanja-Hangul) | ko | 4 |
 | Austroasiatic | Latin (Vietnamese) | vi | 3 |
 | Kra-Dai | Thai abugida | th | 3 |
 | Niger-Congo, Bantu | Latin | sw | 4 |

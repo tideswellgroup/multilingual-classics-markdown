@@ -115,6 +115,11 @@ Each item names the defect, the best identified path to fixing it, and what "fix
 - **Path**: normalise to a single convention, which means resolving consonantal from vocalic u word by word rather than by regex (uult, suus, and tenuis all defeat a naive rule). A Latin reader could do Libri II-XII to v in an afternoon, or the whole file to u. Either direction is defensible; v matches the cited edition, u matches eleven twelfths of the current file.
 - **Done means**: one convention across all twelve books, the choice and its direction stated in source_note, and the macron layer's provenance restated to match whatever base the normalisation follows.
 
+### ko: *춘향가*: withdrawn
+- **Defect**: withdrawn on 2026-10-06 while its source is reviewed, and still in v1.0.1.
+- **Path**: replace it with a 춘향전 from a pre-1929 printing, qualified and recorded in sources/ first.
+- **Done means**: a replacement book whose source edition is named and public domain.
+
 ### egy: Book of the Dead, spell 17: withdrawn
 - **Defect**: withdrawn on 2026-10-06, and still in v1.0.0. Most rotated signs are encoded with non-standard variation sequences, and three signs are non-core signs that the fonts tested leave out.
 - **Path**: fix the converter, test a reading method, rebuild.
