@@ -241,8 +241,6 @@ Four things would make this corpus easier to cite:
 3. **A stated editorial method.** [CORPUS.md](CORPUS.md) describes how the texts were made, including the use of AI models. It doesn't yet record, for each book, how it was checked and whether someone who reads its language has seen it.
 4. **Structural encoding.** Verse lines, speakers, page breaks and a critical apparatus would need TEI rather than Markdown. That's a different project, and I don't plan to take it on.
 
-I intend to do the first three.
-
 ## Repository layout
 
 ```
@@ -304,7 +302,7 @@ Rendering problems found in a book (frontmatter that does not parse, structure t
 
 ## Other relevant projects
 
-- [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown) collects English-only public-domain literary classics. This corpus covers the languages that project does not, so the two repos work well together.
+- [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown) collects English-only public-domain literary classics. This corpus covers the languages that that project does not, so the two repos work well together.
 
 If you find another similar project, please open an issue and I'll add it.
 
