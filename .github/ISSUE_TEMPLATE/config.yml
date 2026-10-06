@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/tideswellgroup/multilingual-classics-markdown/discussions
+    about: How a book was made or why it was chosen, a better edition, or what you've built with the corpus. Specific reports belong in an issue.

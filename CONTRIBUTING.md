@@ -19,6 +19,7 @@ Most of what's wanted above needs no Python, no git, and no pull request. Any of
 - [Report a mistake in a book](https://github.com/tideswellgroup/multilingual-classics-markdown/issues/new?template=content-correction.md). A wrong character, a missing passage, a heading in the wrong place. You don't need to know how to fix it, only where it is.
 - [Suggest a language](https://github.com/tideswellgroup/multilingual-classics-markdown/issues/new?template=new-locale.md) the corpus should cover, with a canonical work and a note on where it's digitised.
 - Read a book in a language you know and say what's wrong with it. This is the most useful thing anyone can do here, and [QUALITY.md](QUALITY.md) §How to audit a book describes how to go about it. Report what you find as a content correction.
+- [Start a discussion](https://github.com/tideswellgroup/multilingual-classics-markdown/discussions) about anything that isn't a specific report: how a book was made or why it was chosen, whether a different edition would be better, or how you're using the corpus.
 
 If you'd rather not use GitHub at all, contact@tideswellgroup.com reaches me.
 
@@ -169,5 +170,6 @@ This project follows the [Ruby Code of Conduct](CODE_OF_CONDUCT.md): be tolerant
 - **New sources** (a book or archive worth converting): [open an issue](https://github.com/tideswellgroup/multilingual-classics-markdown/issues/new?template=new-source.md) describing the work, where it lives, and what shape the text is in.
 - **New locale suggestions**: [open an issue](https://github.com/tideswellgroup/multilingual-classics-markdown/issues/new?template=new-locale.md) describing the language, the script, the canonical author/work you'd want to include, and the source you'd source from.
 - **Bug reports** (a conversion script broke, the linter flagged a false positive, etc.): use the [bug-report template](https://github.com/tideswellgroup/multilingual-classics-markdown/issues/new?template=bug-report.md).
+- **Questions and ideas** that aren't a specific report: [start a discussion](https://github.com/tideswellgroup/multilingual-classics-markdown/discussions). If you're not sure whether something is an issue, start there and I'll move it.
 
 Thanks for being here.
