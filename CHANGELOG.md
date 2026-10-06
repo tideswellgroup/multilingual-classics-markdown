@@ -12,6 +12,18 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
+## wave-2026-10-06
+
+146 books in 67 locales, to 145 books in 66.
+
+### Removed (1)
+
+- **egy**: Anonymous, *Book of the Dead, spell 17 (Papyrus of Ani)*
+
+Locales no longer present: egy
+
+The Book of the Dead is withdrawn for revision of its encoding. It remains in v1.0.0 and wave-2026-10-05, and its rendering notes in the sources record are revised. The dataset title no longer carries a language count. Since wave-2026-10-05 the repository has also gained its Zenodo DOI, a check that documentation tables render whole, and links to Discussions.
+
 ## v1.0.0
 
 The first published release, archived on Zenodo with a DOI. The corpus is unchanged from wave-2026-10-05: 146 books in 67 locales. Since that wave, LICENSE has been reduced to the CC0 legal text so that GitHub detects it, a README table that split when rendered has been repaired, and a lint step now catches that fault.
