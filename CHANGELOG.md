@@ -12,6 +12,10 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
+## v1.0.1
+
+v1.0.1 differs from v1.0.0 in one book: the Ancient Egyptian Book of the Dead, spell 17, has been withdrawn for revision of its encoding, and remains available in v1.0.0. The corpus now has 145 books in 66 locales. The dataset is retitled "multilingual-classics-markdown: Public-domain literary classics in their original languages, curated as markdown with YAML frontmatter", and the citation files give the concept DOI.
+
 ## wave-2026-10-06
 
 146 books in 67 locales, to 145 books in 66.

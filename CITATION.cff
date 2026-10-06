@@ -35,8 +35,8 @@ keywords:
   - typography
 license: CC0-1.0
 license-url: "https://creativecommons.org/publicdomain/zero/1.0/"
-version: 1.0.0
-date-released: "2026-10-05"
+version: 1.0.1
+date-released: "2026-10-06"
 preferred-citation:
   type: data
   title: "multilingual-classics-markdown: Public-domain literary classics in their original languages"
