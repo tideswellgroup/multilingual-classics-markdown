@@ -12,6 +12,10 @@ python3 scripts/changelog-entry.py <previous-tag> <new-tag>
 
 Counts inside an entry describe the corpus as it stood at that release and are not updated afterwards.
 
+## v1.0.0
+
+The first published release, archived on Zenodo with a DOI. The corpus is unchanged from wave-2026-10-05: 146 books in 67 locales. Since that wave, LICENSE has been reduced to the CC0 legal text so that GitHub detects it, a README table that split when rendered has been repaired, and a lint step now catches that fault.
+
 ## wave-2026-10-05
 
 145 books in 66 locales, to 146 books in 67.

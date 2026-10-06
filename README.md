@@ -236,7 +236,7 @@ Corrections and new perspectives are welcome, especially from native speakers an
 
 Four things would make this corpus easier to cite:
 
-1. **An archival deposit with a persistent identifier.** A DOI for an archived snapshot would let a citation point to a fixed version of the corpus rather than one that keeps changing. This is planned for the first public release.
+1. **An archival deposit with a persistent identifier.** Each release from v1.0.0 onwards is archived on Zenodo with a DOI, so a citation can point to a fixed version of the corpus rather than one that keeps changing.
 2. **Stable per-book identifiers.** A book is currently identified by its path, so moving a file, for example after a re-attribution, breaks any citation to it. A fixed `uid` in each book's frontmatter would solve that.
 3. **A stated editorial method.** [CORPUS.md](CORPUS.md) describes how the texts were made, including the use of AI models. It doesn't yet record, for each book, how it was checked and whether someone who reads its language has seen it.
 4. **Structural encoding.** Verse lines, speakers, page breaks and a critical apparatus would need TEI rather than Markdown. That's a different project, and I don't plan to take it on.
@@ -294,7 +294,7 @@ multilingual-classics-markdown/
 
 Applications that test against the corpus should consume it as a git submodule rather than copying files, because a hand-copied subset drifts and the drift is invisible until something regresses.
 
-Pin a tag rather than a bare commit. Tags are named `wave-YYYY-MM-DD` after the editing wave they close, and they mark a corpus that has been reviewed end to end. Ordinary commits on `main` do not carry that guarantee, because a wave lands its edits across several commits. Published releases are intended to carry a separate `v<major>.<minor>.<patch>` tag alongside an archival DOI, and the two schemes will not collide; neither exists yet, so today the `wave-*` tags are the only pinnable points.
+Pin a tag rather than a bare commit. Tags are named `wave-YYYY-MM-DD` after the editing wave they close, and they mark a corpus that has been reviewed end to end. Ordinary commits on `main` do not carry that guarantee, because a wave lands its edits across several commits. Published releases carry a separate `v<major>.<minor>.<patch>` tag and an archival DOI on Zenodo, and the two schemes do not collide. The first release is `v1.0.0`.
 
 Paths (`books/<locale>/<author>/<title>.md`) are the identity of a book. There is no separate stable ID, and `manifest.json` keys on the path. Renames are rare and happen when a re-attribution or a source correction makes the old path wrong. When one happens it lands in a commit of its own, with no content edit riding along, so that `git diff --find-renames --diff-filter=R <old-tag> <new-tag> -- books` reports the mapping exactly. Consumers keyed on paths should run that diff when they move a pin.
 
