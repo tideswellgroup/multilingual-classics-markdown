@@ -5,6 +5,7 @@ type: dataset
 authors:
   - given-names: Simon
     family-names: Powell
+doi: 10.5281/zenodo.23178146
 repository-code: "https://github.com/tideswellgroup/multilingual-classics-markdown"
 url: "https://github.com/tideswellgroup/multilingual-classics-markdown"
 abstract: >-
@@ -43,4 +44,5 @@ preferred-citation:
     - given-names: Simon
       family-names: Powell
   year: 2026
+  doi: 10.5281/zenodo.23178146
   url: "https://github.com/tideswellgroup/multilingual-classics-markdown"

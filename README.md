@@ -1,6 +1,6 @@
 # multilingual-classics-markdown
 
-[![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 146](https://img.shields.io/badge/books-146-blue.svg)](CORPUS.md) [![Locales: 67](https://img.shields.io/badge/locales-67-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23178146.svg)](https://doi.org/10.5281/zenodo.23178146) [![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 146](https://img.shields.io/badge/books-146-blue.svg)](CORPUS.md) [![Locales: 67](https://img.shields.io/badge/locales-67-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
 
 > A curated corpus of public-domain literary classics in 54 languages across 67 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Egyptian hieroglyphs, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 146 books across 14 language families and 20 script systems.
 
@@ -312,8 +312,10 @@ If this corpus contributes to your work, please cite it. The repository carries 
 
 ```
 Powell, S. multilingual-classics-markdown: Public-domain literary classics
-in 54 languages [Software]. GitHub. https://github.com/tideswellgroup/multilingual-classics-markdown
+in 54 languages [Software]. Zenodo. https://doi.org/10.5281/zenodo.23178146
 ```
+
+That DOI always resolves to the latest release. Each release also has a DOI of its own, given on its Zenodo page, for citing one fixed version.
 
 ## Acknowledgements
 
