@@ -1,8 +1,8 @@
 {
   "$schema": "./manifest.schema.json",
   "corpus": "multilingual-classics-markdown",
-  "bookCount": 146,
-  "localeCount": 67,
+  "bookCount": 145,
+  "localeCount": 66,
   "locales": [
     "ang",
     "ar",
@@ -13,7 +13,6 @@
     "cy",
     "de-AT",
     "de-DE",
-    "egy",
     "el",
     "en-AU",
     "en-CA",
@@ -398,25 +397,6 @@
       "yearNumeric": 1774,
       "sizeBytes": 245021,
       "wordCount": 38780
-    },
-    {
-      "path": "books/egy/Anonymous/Book of the Dead, spell 17.md",
-      "locale": "egy",
-      "title": "Book of the Dead, spell 17 (Papyrus of Ani)",
-      "title_en": "Book of the Dead, spell 17",
-      "author": "Anonymous",
-      "language": "egy",
-      "year": "c. 1250 BCE",
-      "year_note": "The spell is older than the papyrus; the Papyrus of Ani (British Museum EA 10470), a funerary roll of the Nineteenth Dynasty, is the witness. The transcription follows Budge's facsimile, The Book of the Dead: Facsimile of the Papyrus of Ani in the British Museum (London, 1890), checked against photographs.",
-      "source": "MDC-texts (Serge Rosmorduc)",
-      "source_url": "https://github.com/rosmord/MDC-texts/blob/98bcf846a7/texts/Book%20of%20the%20dead%20Chapter%2017.gly",
-      "source_note": "Retrieved 2026-10-04 from Serge Rosmorduc's MDC-texts collection on GitHub (https://github.com/rosmord/MDC-texts, file texts/Book of the dead Chapter 17.gly at commit 98bcf846a7 of 2023-06-27, which added its licence line; SHA-256 of the file as retrieved 7184c26acbf2e4ff20d5df40d520a7f65454cb25d988076fcfd3fea6b10ce6fa), converted with scripts/convert-mdc-hieroglyphs.py. The transcription is Raymond Monfort's, in JSesh's Manuel de Codage, from Budge's facsimile of the Papyrus of Ani (British Museum, 1890) checked against photographs; its own words: 'Ref: Budge Pap. Ani et collations sur photos'. Upstream licence, verbatim, from the file: 'Licence : Creative commons CC-BY'; no version is given, and the collection's README links CC BY 2.0 as its example. Attribution as that licence requires: transcription by Raymond Monfort, published in Serge Rosmorduc's MDC-texts, CC BY. The transcription is a modern scholarly layer the corpus's CC0 dedication does not reach; it is named in the README with the corpus's other such books. Public-domain basis: the papyrus is of about 1250 BCE and was published in facsimile in 1890. Admitted under the sacred-text exception, route recovered-text (README curation principle 2): the Book of the Dead is a funerary text whose tradition ended in antiquity; its papyri were recovered from tombs and read again only after the decipherment of hieroglyphs. Selection: spell 17 as it stands in the Papyrus of Ani, columns 1 to 145 (Budge's plates VII to X). Where Ani lacks a passage after column 112, the transcription supplies columns 16 to 52 of the Papyrus of Nebseny, whose source edition it does not name; that supplement is left out and its place marked [...]. Conversion: sign codes map to Unicode through the kEH_JSesh field of Unicode's Unikemet database (UCD 18.0.0); JSesh's phonetic shorthand (n, pr, anx) maps through a 126-code table written for this converter from the values of Gardiner's sign list, of which 116 agreed at once with an independent converter, Mark-Jan Nederhof's hieropy, and ten were resolved to agree with it, its tables following JSesh. Layout uses the Unicode Egyptian format controls: stacking, juxtaposition, and corner insertion for the 23 ligatures the chapter uses. Compared line by line with hieropy's conversion, 153 of 157 lines are identical; three differ only where hieropy has no character for an Extended-A sign that Unikemet maps, and one only in whether a bracketed stack carries segment marks. Signs with no Unicode mapping identified are written as their sign number in braces, never replaced by a look-alike: nineteen occurrences of ten signs (E5A, F51B, G20A, G20B, G234, G248, N33Av, P67, R31, V87). Not represented: the red ink of the rubrics (68 passages), Monfort's column numbers, his four 'sic' notes, size hints, and an editor's underscore mark on some signs of one line. Each line of the file is one of Monfort's lines, and each heading is one of Budge's plates. Rendering needs a font covering Egyptian Hieroglyphs, the format controls and the Extended-A block of Unicode 16, such as NewGardiner (SIL Open Font License); with others, signs show unstacked or as boxes.",
-      "language_note": "Ancient Egyptian: Middle Egyptian, in a New Kingdom copy, written in cursive hieroglyphs (ISO 15924 Egyp).",
-      "license": "Public domain in the United States",
-      "sacred_text": "recovered-text",
-      "yearNumeric": -1250,
-      "sizeBytes": 29201,
-      "wordCount": 170
     },
     {
       "path": "books/el/Αλέξανδρος Παπαδιαμάντης/Διηγήματα.md",

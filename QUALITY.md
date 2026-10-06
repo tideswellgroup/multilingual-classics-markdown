@@ -115,10 +115,10 @@ Each item names the defect, the best identified path to fixing it, and what "fix
 - **Path**: normalise to a single convention, which means resolving consonantal from vocalic u word by word rather than by regex (uult, suus, and tenuis all defeat a naive rule). A Latin reader could do Libri II-XII to v in an afternoon, or the whole file to u. Either direction is defensible; v matches the cited edition, u matches eleven twelfths of the current file.
 - **Done means**: one convention across all twelve books, the choice and its direction stated in source_note, and the macron layer's provenance restated to match whatever base the normalisation follows.
 
-### egy: Book of the Dead, spell 17 (Papyrus of Ani)
-- **Defect**: two things not yet checked by a reader of hieroglyphs. First, the 23 ligatures are converted to Unicode corner insertions by a table written for this converter; the placements agree with an independent converter, hieropy, whose tables follow JSesh, but none has been compared with Budge's facsimile. Second, the conversion of JSesh's phonetic shorthand rests on a table compiled for this converter; the ten codes a first draft read differently, left open or lacked were resolved to agree with hieropy.
-- **Path**: compare a sample of lines, every ligature among them, with the plates of Budge's facsimile (The Book of the Dead: Facsimile of the Papyrus of Ani in the British Museum, 1890, plates VII to X), recording any disagreement in `scripts/convert-mdc-hieroglyphs.py`.
-- **Done means**: the ligature placements and the ten resolved codes confirmed against the facsimile, or corrected and disclosed.
+### egy: Book of the Dead, spell 17: withdrawn
+- **Defect**: withdrawn on 2026-10-06, and still in v1.0.0. Most rotated signs are encoded with non-standard variation sequences, and three signs are non-core signs that the fonts tested leave out.
+- **Path**: fix the converter, test a reading method, rebuild.
+- **Done means**: a rebuilt file that renders as its notes say.
 
 ### gu: Govardhanram Tripathi, *Sarasvatichandra*, Part 1
 - **Defect**: the gu.wikisource transcription is validated on 370 of 373 pages, yet it carried 1,182 glyph slips of five systematic kinds (split vowels; Gujarati digits typed for the letters ર, પ and the half form લ્; and the digit ૦ for the letter o in English words), all repaired as counted classes and disclosed in the source_note. Slips of that kind surviving validation means less systematic ones (a single misread letter) may survive too.

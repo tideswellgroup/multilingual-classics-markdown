@@ -1,8 +1,8 @@
 # multilingual-classics-markdown
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23178146.svg)](https://doi.org/10.5281/zenodo.23178146) [![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 146](https://img.shields.io/badge/books-146-blue.svg)](CORPUS.md) [![Locales: 67](https://img.shields.io/badge/locales-67-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23178146.svg)](https://doi.org/10.5281/zenodo.23178146) [![Content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](LICENSE) [![Tooling: MIT](https://img.shields.io/badge/tooling-MIT-lightgrey.svg)](LICENSE-CODE.md) [![Books: 145](https://img.shields.io/badge/books-145-blue.svg)](CORPUS.md) [![Locales: 66](https://img.shields.io/badge/locales-66-blue.svg)](#coverage-matrix) [![Metadata: Croissant 1.0](https://img.shields.io/badge/metadata-Croissant%201.0-lightgrey.svg)](croissant.json)
 
-> A curated corpus of public-domain literary classics in 54 languages across 67 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Egyptian hieroglyphs, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 146 books across 14 language families and 20 script systems.
+> A curated corpus of public-domain literary classics in 53 languages across 66 locales, converted to clean markdown with YAML frontmatter, spanning Latin, Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK, Thai, Cherokee, three constructed languages, and the historical Englishes from Beowulf to Shakespeare's 1609 Quarto. In total, this repo collects 145 books across 14 language families and 19 script systems.
 
 This repo is intended as a complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown), 
 delivering the languages, the historical Englishes (Old English, Middle English, original-spelling Early Modern), and the regional English literatures that modern-spelling English corpora do not carry. It was built so that application developers, NLP researchers, language learners, and typography enthusiasts can drop a real-world multilingual corpus into their workflow as easily as possible. The en-US and modern-spelling en-GB canon, which mlschmitt's project already does well, are deliberately absent.
@@ -11,9 +11,9 @@ delivering the languages, the historical Englishes (Old English, Middle English,
 
 | | |
 |---|---|
-| **Languages** | 54 languages across 67 locales and 14 language families |
-| **Books** | 146 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
-| **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Egyptian hieroglyphs, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
+| **Languages** | 53 languages across 66 locales and 14 language families |
+| **Books** | 145 individual works, ~33 MB of markdown. The whole repository clones in seconds (about 14 MiB packed) |
+| **Scripts covered** | Latin (with rich diacritics), Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK (Han / kana / Hangul), Thai abugida, Cherokee syllabary |
 | **License** | Content: CC0 (where public-domain content needs a license at all). Tooling: MIT |
 | **Fidelity** | Faithful renditions of named source editions, not critical editions. See [Academic use](#academic-use) before citing |
 | **Provenance** | Every book carries source URL, original publication year, and license posture in YAML frontmatter |
@@ -89,7 +89,6 @@ If you'd like to know more about how these tags work, Wikipedia's [IETF language
 | Indo-European, Old Norse | Latin (with þ ð) | is | 3 |
 | Afro-Asiatic, Semitic | Hebrew | he | 3 |
 | Afro-Asiatic, Semitic | Arabic | ar | 3 |
-| Afro-Asiatic, Egyptian | Egyptian hieroglyphs | egy | 1 |
 | Sino-Tibetan, Sinitic | Han (Simplified) | zh-Hans | 4 |
 | Sino-Tibetan, Sinitic | Han (Traditional) | zh-Hant | 4 |
 | Sino-Tibetan, Tibetic | Tibetan (Old Tibetan orthography) | bo | 1 |
@@ -175,7 +174,6 @@ Every book in this repo came from one of these upstream sources:
 | [Internet Archive](https://archive.org) | Items unavailable through curated archives (Cherokee, Yoruba, Irish, Scots Gaelic, Mexican Spanish, Volapük, Ido, Esperanto first editions) |
 | [africanpoems.net](https://africanpoems.net) | Mwana Kupona's 1858 Swahili didactic poem |
 | [Old Tibetan Documents Online](https://otdo.aa-ken.jp) | The *Old Tibetan Chronicle*, transcribed from the Dunhuang manuscript |
-| [MDC-texts](https://github.com/rosmord/MDC-texts) | Book of the Dead spell 17 from the Papyrus of Ani, in Manuel de Codage, converted to Unicode hieroglyphs |
 
 Each source has its own conventions (wikitext templates, Aozora's ruby annotations, Internet Archive's DjVu OCR, Ganjoor's per-poem API). The conversion scripts in `scripts/` know how to handle them. To add a new book:
 
@@ -203,9 +201,8 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
    | `te` Gurajada, *కన్యాశుల్కము* | 1909 | Kondapalli Veeravenkayya and Sons reprint, Rajahmundry, 1961 |
    | `or` Senapati, *ଛମାଣ ଆଠଗୁଣ୍ଠ* | 1902 | Srujanika and NIT Rourkela digital edition, 2013 |
    | `bo` *Old Tibetan Chronicle* | c. 900 (manuscript) | Old Tibetan Documents Online transcription, CC BY 4.0, revised in batches from 2018 to 2024 |
-   | `egy` Book of the Dead, spell 17 | c. 1250 BCE (papyrus), Budge facsimile 1890 | Raymond Monfort's transcription in MDC-texts, CC BY (licence line added 2023) |
 
-   The `pl`, `uk`, `mi`, `te` and `or` books reproduce an orthographic recension, a reprint or a plain digitisation of a text that is itself free, which carries no practical restriction. Three are scholarly transcriptions in which an editorial layer may genuinely subsist. The `sw` book is an edited transcription and is flagged in [QUALITY.md](QUALITY.md) for re-sourcing from Alice Werner's 1917 edition. The `bo` book is a diplomatic reading of the manuscript published by its scholars under CC BY 4.0, which permits redistribution with attribution; the attribution is in the file, and the corpus's CC0 dedication does not reach that layer. The `egy` book is the same case: Raymond Monfort's sign-by-sign transcription of Budge's facsimile, released CC BY.
+   The `pl`, `uk`, `mi`, `te` and `or` books reproduce an orthographic recension, a reprint or a plain digitisation of a text that is itself free, which carries no practical restriction. Two are scholarly transcriptions in which an editorial layer may genuinely subsist. The `sw` book is an edited transcription and is flagged in [QUALITY.md](QUALITY.md) for re-sourcing from Alice Werner's 1917 edition. The `bo` book is a diplomatic reading of the manuscript published by its scholars under CC BY 4.0, which permits redistribution with attribution; the attribution is in the file, and the corpus's CC0 dedication does not reach that layer.
 2. **The selection is secular by default.** The sacred and liturgical texts of every religion are excluded alike, while folk tales, national epics, philosophical-skeptical works, and ethical wisdom literature are included as literary canon. The rule has two reasons: choosing a tradition's scripture is a decision that belongs inside that tradition, and sacred texts are the most digitised in most languages, so they would crowd out the literature the corpus exists to sample.
 
    A narrow exception admits a sacred, liturgical or cult text where neither reason applies, by one of two routes. Every other rule still holds (publication date or the manuscript exception, a named edition, a usable licence, real Unicode), and every book admitted this way carries a `sacred_text` field naming its route, so it can be filtered out in one line against `manifest.json` ([FRONTMATTER.md](FRONTMATTER.md)).
@@ -213,7 +210,7 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
    - **`recovered-text`**: the work itself was lost to knowledge and is known only from excavation, from the rediscovery of a lost text, or from the decipherment of its script, so it did not come down through any community and admitting it pre-empts no tradition's choice. Ancient Egyptian and Sumerian cult texts qualify this way. Texts kept continuously in libraries and manuscript collections do not, however dead their language: the Old English gospels, the Old High German Tatian, the Old Irish homilies. Text erased and written over in a manuscript kept in a library counts as kept. Nor does a translation or version of a work that was copied without a break in any language qualify, even when its own manuscripts were excavated.
    - **`sole-witness`**: the text is in a script, identified by its ISO 15924 code, that no other book in the corpus represents, because no substantial secular text from before 1929 in that script is available in a form meeting these rules. It must be in a language natively written in that script and ships under that language's locale; a classical language in a borrowed script, such as Pali or Sanskrit in Sinhala or Burmese letters, does not qualify. The route admits at most one book per script. Where several sacred texts could serve, the corpus takes the one scholarship uses as the base text of the language's standard edition or grammar, so it does not choose among scriptures; a translation such as Wulfila's Gothic Bible is acceptable and names its translator in `translator`. The search behind the claim is recorded under [sources/](sources/), naming the locale and the script code in backticks. The test is judged at admission: if a usable secular text in that script appears later, the flagged book stays, and the change is noted in its record.
 
-   The field marks admission by this exception, not religious themes. Devotional lyric (Gitanjali, Hafez), mythology (the Mabinogi), folk legend sung at shrines (*Koti Chennaya*) and the ritual pieces within collected oral literature (the karakia in *Ko Nga Moteatea*) are literature admitted under the normal rule and carry no flag. One book uses the exception so far: the `egy` Book of the Dead, spell 17, by the recovered-text route.
+   The field marks admission by this exception, not religious themes. Devotional lyric (Gitanjali, Hafez), mythology (the Mabinogi), folk legend sung at shrines (*Koti Chennaya*) and the ritual pieces within collected oral literature (the karakia in *Ko Nga Moteatea*) are literature admitted under the normal rule and carry no flag. No book uses the exception at present.
 3. **Each locale carries two or three books**, mixing size and genre where sources permit.
 4. **Canonical works are preferred over obscure ones.** Where the choice is between a niche author and a recognised one, the corpus leans canonical.
 5. **Reference works are accepted** only when literary prose is not digitised in clean form. This currently applies to yo and chr, where the pre-1929 corpus is overwhelmingly missionary-religious in nature. Both locales have secular texts, so the sacred-text exception in principle 2 does not apply to them.
@@ -312,7 +309,7 @@ If this corpus contributes to your work, please cite it. The repository carries 
 
 ```
 Powell, S. multilingual-classics-markdown: Public-domain literary classics
-in 54 languages [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23178146
+in their original languages [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23178146
 ```
 
 That DOI always resolves to the latest release. Each release also has a DOI of its own, given on its Zenodo page, for citing one fixed version.
@@ -332,7 +329,6 @@ This repo would not be possible without the work of the hundreds of people who t
 - **NZETC** (Victoria University of Wellington) for the Maori transcriptions, reached through the Internet Archive Wayback Machine after the live host was decommissioned
 - **africanpoems.net** for the text of Mwana Kupona's *Utendi*
 - **Old Tibetan Documents Online** (ILCAA, Tokyo University of Foreign Studies) for the transcription of the *Old Tibetan Chronicle*, under CC BY 4.0
-- **Raymond Monfort** for the transcription of the Book of the Dead, spell 17, published in **Serge Rosmorduc**'s MDC-texts, under CC BY
 - **Srujanika** and the **National Institute of Technology, Rourkela**, for the Odia digital edition of *Chha Mana Atha Guntha*
 - **Matt Schmitt** for `classic-books-markdown`, which motivated and informed this work
 - The countless authors, editors, and translators whose work is in these files

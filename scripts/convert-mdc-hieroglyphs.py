@@ -34,6 +34,9 @@ by VARIATION SELECTOR-1; a bare `\\` is a horizontal mirror; `\\80` and the
 like are size hints with no Unicode equivalent and are dropped. `[[`/`]]`
 become square brackets around restored signs.
 
+Known defect: this mapping mostly produces rotation sequences that Unicode
+does not standardize. Fix it before reuse.
+
 Not represented, and disclosed in the book: the red ink of the rubrics
 (`$r`/`$b`), Monfort's column numbers, his "sic" annotations, and a
 trailing `_` on some signs of one line (an editor's mark with no Unicode
@@ -131,7 +134,7 @@ NUMERALS = {"2": "Z004A", "3": "Z002A", "4": "Z015C"}
 # as GROUP), mapped to (index of the core sign, insertion place). The places
 # follow the forms these ligatures take in hieratic-derived hieroglyphic
 # writing; they agree with hieropy's conversion, which follows JSesh, on all
-# 23. None has yet been compared with the facsimile (see QUALITY.md).
+# 23. None has yet been compared with the facsimile (see QUALITY.md, egy).
 LIGATURES = {
     "I10&D46": (0, "bs"), "G17A&Z4": (0, "te"), "G53&Z1": (0, "te"),
     "G191&X1&Z4": (0, "bs"), "G25&Aa1": (0, "te"), "G1&X1": (0, "te"),

@@ -1,10 +1,10 @@
 # Corpus inventory
 
-Curated public-domain literary classics across 67 locales (56 beyond modern English, plus the historical and regional Englishes), with YAML frontmatter declaring source, year, license, and provenance. This corpus is intended as the non-English complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown).
+Curated public-domain literary classics across 66 locales (55 beyond modern English, plus the historical and regional Englishes), with YAML frontmatter declaring source, year, license, and provenance. This corpus is intended as the non-English complement to [`mlschmitt/classic-books-markdown`](https://github.com/mlschmitt/classic-books-markdown).
 
 ## Provenance
 
-The books came from thirteen upstream sources, each with its own conventions:
+The books came from twelve upstream sources, each with its own conventions:
 
 | Source | Locales sourced from it |
 |---|---|
@@ -20,14 +20,13 @@ The books came from thirteen upstream sources, each with its own conventions:
 | NZETC (Victoria University of Wellington), via Internet Archive Wayback Machine | mi Grey *Ko Nga Moteatea*, mi White *Nga Kauhau Maori o Nehe* (live host decommissioned; retrieval CDX-verified) |
 | [africanpoems.net](https://africanpoems.net) | sw Mwana Kupona |
 | [Old Tibetan Documents Online](https://otdo.aa-ken.jp) (ILCAA, Tokyo University of Foreign Studies) | bo *Old Tibetan Chronicle* (CC BY 4.0 transcription of the manuscript) |
-| [MDC-texts](https://github.com/rosmord/MDC-texts) (Serge Rosmorduc) | egy Book of the Dead spell 17 (Raymond Monfort's CC BY transcription of the Papyrus of Ani) |
 
 Each `.md` file's frontmatter records the precise source URL, the upstream repository, the original publication year, and a US public-domain license declaration.
 
 ## Curation principles
 
 1. **Every book is unambiguously in the US public domain**: normally that means pre-1929 publication; a narrow documented manuscript-works exception (author dead before 1855, unpublished-works term long expired, basis stated in the file's source_note) also qualifies.
-2. **The selection is secular by default**, excluding the sacred and liturgical texts of every religion alike. Folk-tale corpora, national epics, philosophical-skeptical works, and reference works are included as literary canon. Works specifically judged literary: Khayyam *Rubaiyat* (philosophical-skeptical), *Alf laylah wa-laylah* (framed-narrative folk fiction), *Lazarillo de Tormes* (anti-clerical satire), Saadi *Gulistan* (ethical prosimetric in the wisdom-literature tradition), the Mabinogi (medieval Welsh folk tales with mythological content), *Dao De Jing* and *Analects* (philosophical canon), Bowen *Yoruba Proverbs* and Cherokee *Constitution* (secular alternatives to the overwhelmingly missionary-religious pre-1929 corpora in those languages). A narrow exception, set out in the README's curation principle 2, admits a sacred text whose work was lost and recovered, or the one standard text in a script the corpus cannot otherwise carry; such books carry the `sacred_text` field. One book uses it so far: the egy Book of the Dead, spell 17 (recovered-text).
+2. **The selection is secular by default**, excluding the sacred and liturgical texts of every religion alike. Folk-tale corpora, national epics, philosophical-skeptical works, and reference works are included as literary canon. Works specifically judged literary: Khayyam *Rubaiyat* (philosophical-skeptical), *Alf laylah wa-laylah* (framed-narrative folk fiction), *Lazarillo de Tormes* (anti-clerical satire), Saadi *Gulistan* (ethical prosimetric in the wisdom-literature tradition), the Mabinogi (medieval Welsh folk tales with mythological content), *Dao De Jing* and *Analects* (philosophical canon), Bowen *Yoruba Proverbs* and Cherokee *Constitution* (secular alternatives to the overwhelmingly missionary-religious pre-1929 corpora in those languages). A narrow exception, set out in the README's curation principle 2, admits a sacred text whose work was lost and recovered, or the one standard text in a script the corpus cannot otherwise carry; such books carry the `sacred_text` field. No book uses it at present.
 3. **Each locale carries two to three books** where sources permitted, mixing size, genre, and period, and differentiating by register or epoch within the locale.
 4. **Canonical works are preferred** over obscure ones.
 5. **Reference works are accepted** only where literary prose is not digitised in clean form. This currently applies to yo (Crowther dictionary, Dennett primer, Bowen proverbs) and chr (the Cherokee Nation Constitution is the only substantive pre-1929 secular Cherokee-language source on Internet Archive). Both locales have secular texts, so the sacred-text exception does not apply to them.
@@ -48,7 +47,7 @@ If you read one of these languages, or know a source edition well, checking a bo
 
 ## Inventory
 
-146 markdown files across 67 locales. Sizes are approximate.
+145 markdown files across 66 locales. Sizes are approximate.
 
 ### Cluster A: Indo-European Romance
 
@@ -145,7 +144,6 @@ If you read one of these languages, or know a source edition well, checking a bo
 | fa | Omar Khayyam | *رباعیات* (178 quatrains) | c. 1100 | 45 KB |
 | fa | Saadi Shirazi | *گلستان* | 1258 | 188 KB |
 | fa | Hafez Shirazi | *غزلیات* (first 50 ghazals) | c. 14th c. | 57 KB |
-| egy | Anonymous | Book of the Dead, spell 17 (Papyrus of Ani) | c. 1250 BCE (Budge facsimile 1890) | 29 KB |
 
 ### Cluster E: Hellenic + Italic
 
@@ -300,6 +298,7 @@ A handful of locales needed a different source or a different pick than original
 - **la** (*Aeneis*): the la.wikisource transcription names its edition as Greenough (Ginn, 1900) but does not reproduce Greenough's orthography. Two layers sit on top of it. Vowel-quantity macrons are carried throughout, which the print edition does not have; they come from The Latin Library, the route la.wikisource cites, whose Aeneid I is macronised and uses v. Its Books 2-12 are unmacronised and use v too, so the macronisation and the u-normalisation of Libri II-XII are both Wikisource's. The u/v convention is not uniform either: Liber I writes consonantal v (avena, venit) while Libri II-XII write u (renouare, uidi), so one file carries two conventions. Both layers are left exactly as transcribed. Normalising either one means deciding consonantal u from vocalic u word by word, which is an editorial act on the text and would be guesswork on my part. The inconsistency is flagged in QUALITY.md; a contributor who reads Latin could settle it. The bracketed line 10.872 and the Ille ego pre-proem are edition questions rather than transcription ones and are explained in the book's source_note.
 - **el / grc** (Greek): the two are separate languages and separate locales here. Plato is Attic, so it sits under `grc`; Papadiamantis is modern Greek under `el`. Both texts are polytonic, which took choosing: most Greek digitisation of pre-1929 work converts to the monotonic system introduced in 1982, rewriting the accentuation of the original. The Papadiamantis converter refuses any story whose transcription carries no breathings, which is why the selection omits *Όνειρο στο κύμα*, available on el.wikisource only in monotonic form. *Το Μοιρολόγι της Φώκιας* is absent because el.wikisource does not carry it at all.
 - **am** (Amharic): **dropped from v1**. No pre-1929 PD Amharic literary text is digitised in clean form. Documented as an open gap rather than filled with a rule-breaking placeholder; clean secular sources are especially welcome. The sacred-text exception does not change this: Amharic shares the Ethiopic script with Ge'ez, so a Ge'ez text admitted under the sole-witness route would cover the script, never the Amharic locale.
+- **egy** (Ancient Egyptian): the Book of the Dead, spell 17, was withdrawn on 2026-10-06 for revision of its encoding. It remains in v1.0.0.
 - **mr, gu, pa, or, te, kn, ml, bo** (the 2026-10-04 coverage push): one book each, chosen from candidates qualified in [sources/2026-10-04-coverage-push.md](sources/2026-10-04-coverage-push.md), which also records the picks passed over. Every text was checked to be real Unicode rather than a legacy font encoding, and several carried a systematic transcription fault that is repaired as a counted class and disclosed in the book's source_note: Gujarati digits typed for the letters they resemble, an Odia conjunct mis-mapped from the edition's legacy font, Malayalam old-font digit letters, and a Kannada digit for the anusvara. Per locale:
   - **mr**: the canonical pre-1929 Marathi novels (Hari Narayan Apte's among them) have no scan-backed transcription today, so the pick is Apte's own miscellany *Sphut Goshti* Part 4 (1915), proofread once and not yet validated. T. N. Atre's *Gaon-Gada* (1915) is the candidate for a second book once its last six pages are proofread.
   - **gu**: Part 1 of *Sarasvatichandra* only, from the 1922 eighth edition; two religious front pages are left out.
@@ -308,7 +307,6 @@ A handful of locales needed a different source or a different pick than original
   - **te**: *Kanyasulkamu* in Gurajada's 1909 recast text, transcribed from a 1961 reprint (also in that table).
   - **kn**: *Koti Chennaya* retells a Tulu legend whose heroes are venerated at shrines; it is admitted as folk epic, and the adjacency is disclosed in the file.
   - **ml**: *Indulekha* is a typed transcription with no scan and no named edition, admitted under the rule for modern works; at 1.4 MB it is one of the corpus's two largest files.
-  - **egy** (added the same day, from [sources/2026-10-04-egyptian-and-sumerian.md](sources/2026-10-04-egyptian-and-sumerian.md)): spell 17 of the Book of the Dead from the Papyrus of Ani, the corpus's first book under the sacred-text exception (recovered-text). The hieroglyphic text is Raymond Monfort's CC BY transcription of Budge's 1890 facsimile, converted from JSesh's code to Unicode by this corpus; the rubrics' red ink is not represented, ten signs with no Unicode mapping identified stand as their sign numbers in braces, and a passage the transcription supplies from another papyrus is left out. Reading it needs a font such as NewGardiner.
   - **bo**: the scroll was first printed in 1940, so the book is the corpus's second use of the manuscript-works exception, and its transcription carries a CC BY 4.0 scholarly layer from OTDO (see the README).
 
 ## Text-quality tiers
@@ -355,7 +353,7 @@ All conversion happens via scripts under `scripts/`:
 | `convert-sarasvatichandra.py` | Wrapper over the walker: footnotes to Markdown footnotes, counted glyph-slip classes, chapter-overlap check | gu |
 | `convert-chha-mana-atha-guntha.py` | Wrapper over the walker: two-line chapter heads, the ṇḍa conjunct repair | or |
 | `convert-jangnama.py` | pa.wikisource Page-namespace assembly; verse lines rebuilt from danda marks and checked by stanza number and signature; scan-verified corrections | pa |
-| `convert-mdc-hieroglyphs.py` | JSesh / Manuel de Codage to Unicode Egyptian hieroglyphs: Unikemet sign table, a Gardiner-based phonetic table, Unicode format controls and ligature insertions; checked line by line against an independent converter | egy |
+| `convert-mdc-hieroglyphs.py` | JSesh / Manuel de Codage to Unicode Egyptian hieroglyphs: Unikemet sign table, a Gardiner-based phonetic table, Unicode format controls and ligature insertions; checked line by line against an independent converter | egy (withdrawn; kept for the rebuild) |
 | `convert-otdo.py` | Old Tibetan Documents Online: Tibetan-script rendering checked line by line against the Wylie master | bo |
 | `convert-hawaiian-bilingual.py` | IA bilingual-edition language separation (consonant-ratio scoring) | haw (superseded 2026-07-24 by the Gutenberg re-source) |
 | `convert-haw-gutenberg.py` | PG plain text, Hawaiian-section slicing (Laieikawai MOKUNA X heading restored by English-chapter alignment; Umi genealogy set as a table) | haw (both) |
@@ -392,7 +390,7 @@ The corpus covers:
 
 **Language families**:
 - Indo-European: Germanic (de-DE, de-AT, nl, sv, no, sco, English: en-GB, en-US, en-IE, en-CA, en-NZ, en-ZA, en-AU, en-IN, en-JM, plus the historical stages ang and enm), Romance (es-ES, es-MX, fr, it, pt-PT, pt-BR), Slavic (ru, uk, pl, cs), Indo-Iranian (hi, mr, bn, gu, pa, or, fa, ur), Celtic (cy, ga, gd), Hellenic (grc, el), Italic (la), Old Norse (is)
-- Afro-Asiatic: Semitic (he, ar), Egyptian (egy)
+- Afro-Asiatic: Semitic (he, ar)
 - Sino-Tibetan: Sinitic (zh-Hans, zh-Hant), Tibetic (bo)
 - Japonic: Japanese (ja)
 - Koreanic: Korean (ko)
@@ -424,7 +422,6 @@ The corpus covers:
 - Kannada script (kn)
 - Malayalam script (ml)
 - Tibetan script (bo)
-- Egyptian hieroglyphs (egy, with the Unicode 15 format controls and the Unicode 16 Extended-A block)
 
 **Documented gaps** (locales considered and deliberately left open rather than force-filled; the Amharic pattern):
 

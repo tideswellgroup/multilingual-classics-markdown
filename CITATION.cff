@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "multilingual-classics-markdown: Public-domain literary classics in 54 languages, curated as markdown with YAML frontmatter"
+title: "multilingual-classics-markdown: Public-domain literary classics in their original languages, curated as markdown with YAML frontmatter"
 message: "If this corpus contributes to your work, please cite it."
 type: dataset
 authors:
@@ -9,11 +9,11 @@ doi: 10.5281/zenodo.23178146
 repository-code: "https://github.com/tideswellgroup/multilingual-classics-markdown"
 url: "https://github.com/tideswellgroup/multilingual-classics-markdown"
 abstract: >-
-  A curated public-domain literary corpus in 54 languages across 67 locales,
+  A curated public-domain literary corpus in 53 languages across 66 locales,
   converted to clean markdown with YAML frontmatter. Spans 14 language
-  families and 20 script systems including Latin (with rich diacritics),
+  families and 19 script systems including Latin (with rich diacritics),
   Cyrillic, Greek, Hebrew, Arabic, Perso-Arabic, Devanagari, Bengali,
-  Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, Egyptian hieroglyphs, CJK (Han,
+  Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Tibetan, CJK (Han,
   kana, Hangul), Thai abugida, Cherokee syllabary, plus three
   constructed auxiliary languages. Designed as a drop-in test corpus
   for application developers, NLP researchers, language learners, and
@@ -39,7 +39,7 @@ version: 1.0.0
 date-released: "2026-10-05"
 preferred-citation:
   type: data
-  title: "multilingual-classics-markdown: Public-domain literary classics in 54 languages"
+  title: "multilingual-classics-markdown: Public-domain literary classics in their original languages"
   authors:
     - given-names: Simon
       family-names: Powell
