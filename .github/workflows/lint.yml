@@ -8,6 +8,10 @@ on:
       - 'scripts/lint-corpus.py'
       - 'scripts/check-doc-counts.py'
       - 'scripts/check-manifest-schema.py'
+      - 'scripts/check-doc-tables.py'
+      - '*.md'
+      - 'audits/**/*.md'
+      - '.github/**/*.md'
       - 'manifest.schema.json'
       - 'croissant.json'
       - 'README.md'
@@ -23,6 +27,10 @@ on:
       - 'scripts/lint-corpus.py'
       - 'scripts/check-doc-counts.py'
       - 'scripts/check-manifest-schema.py'
+      - 'scripts/check-doc-tables.py'
+      - '*.md'
+      - 'audits/**/*.md'
+      - '.github/**/*.md'
       - 'manifest.schema.json'
       - 'croissant.json'
       - 'README.md'
@@ -82,6 +90,13 @@ jobs:
         # Zenodo reads this file at release time to populate the archived
         # record. Invalid JSON there is silent: Zenodo falls back to its own
         # guesses and the DOI landing page is wrong with no error anywhere.
+
+      - name: Check that documentation tables render whole
+        run: |
+          python3 scripts/check-doc-tables.py
+        # A table nested in a list item needs every row indented alike. A row
+        # added at column zero makes GitHub end the table early and print the
+        # remaining rows as text, which a diff does not show.
 
       - name: Check documented counts against the manifest
         run: |
