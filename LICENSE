@@ -1,25 +1,3 @@
-# License
-
-This repository is licensed in two parts.
-
-**Content.** Everything under `books/` is released under the CC0 1.0 Universal
-Public Domain Dedication, whose full legal code is reproduced below. Every text
-is public domain in the United States; the CC0 dedication covers the curation,
-arrangement, frontmatter metadata and markdown rendition, and removes any
-residual ambiguity for downstream users. See LICENSE-CONTENT.md for the scope of
-that dedication and the per-file provenance convention, including the small
-number of books whose transmission base is a later edition.
-
-**Tooling.** Everything under `scripts/` is under the MIT License. See
-LICENSE-CODE.md for the full terms. The MIT license applies to the conversion
-and validation code only, not to the corpus content.
-
-This file exists at the repository root so that automated license detection
-reports the content license correctly. It does not supersede the two files named
-above.
-
----
-
 Creative Commons Legal Code
 
 CC0 1.0 Universal
