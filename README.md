@@ -200,10 +200,10 @@ This corpus is curated rather than exhaustive, and the curation follows five pri
    | `uk` Kotsiubynsky, *Тіні забутих предків* | 1912 | *Твори* vol. 2, Книгоспілка, New York, 1955 |
    | `mi` White, *Nga Kauhau Maori o Nehe* | 1887 | NZETC digitisation, 2001 to 2007 |
    | `sw` Mwana Kupona, *Utendi wa Mwana Kupona* | 1858 | Allen, *Tendi*, Heinemann, 1971 |
-| `te` Gurajada, *కన్యాశుల్కము* | 1909 | Kondapalli Veeravenkayya and Sons reprint, Rajahmundry, 1961 |
-| `or` Senapati, *ଛମାଣ ଆଠଗୁଣ୍ଠ* | 1902 | Srujanika and NIT Rourkela digital edition, 2013 |
-| `bo` *Old Tibetan Chronicle* | c. 900 (manuscript) | Old Tibetan Documents Online transcription, CC BY 4.0, revised in batches from 2018 to 2024 |
-| `egy` Book of the Dead, spell 17 | c. 1250 BCE (papyrus), Budge facsimile 1890 | Raymond Monfort's transcription in MDC-texts, CC BY (licence line added 2023) |
+   | `te` Gurajada, *కన్యాశుల్కము* | 1909 | Kondapalli Veeravenkayya and Sons reprint, Rajahmundry, 1961 |
+   | `or` Senapati, *ଛମାଣ ଆଠଗୁଣ୍ଠ* | 1902 | Srujanika and NIT Rourkela digital edition, 2013 |
+   | `bo` *Old Tibetan Chronicle* | c. 900 (manuscript) | Old Tibetan Documents Online transcription, CC BY 4.0, revised in batches from 2018 to 2024 |
+   | `egy` Book of the Dead, spell 17 | c. 1250 BCE (papyrus), Budge facsimile 1890 | Raymond Monfort's transcription in MDC-texts, CC BY (licence line added 2023) |
 
    The `pl`, `uk`, `mi`, `te` and `or` books reproduce an orthographic recension, a reprint or a plain digitisation of a text that is itself free, which carries no practical restriction. Three are scholarly transcriptions in which an editorial layer may genuinely subsist. The `sw` book is an edited transcription and is flagged in [QUALITY.md](QUALITY.md) for re-sourcing from Alice Werner's 1917 edition. The `bo` book is a diplomatic reading of the manuscript published by its scholars under CC BY 4.0, which permits redistribution with attribution; the attribution is in the file, and the corpus's CC0 dedication does not reach that layer. The `egy` book is the same case: Raymond Monfort's sign-by-sign transcription of Budge's facsimile, released CC BY.
 2. **The selection is secular by default.** The sacred and liturgical texts of every religion are excluded alike, while folk tales, national epics, philosophical-skeptical works, and ethical wisdom literature are included as literary canon. The rule has two reasons: choosing a tradition's scripture is a decision that belongs inside that tradition, and sacred texts are the most digitised in most languages, so they would crowd out the literature the corpus exists to sample.
